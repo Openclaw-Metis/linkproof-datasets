@@ -1,0 +1,96 @@
+{
+  "bundleVersion": "2026.05.sample.2",
+  "fetchedAt": "2026-05-16T00:00:00Z",
+  "records": [
+    {
+      "domain": "confirmed-scam.example.com",
+      "pathPrefix": "",
+      "riskLevel": "confirmedScam",
+      "sourceName": {
+        "zhTW": "165 遭停止解析涉詐網站資料集",
+        "enUS": "165 stopped-resolution scam website dataset"
+      },
+      "sourceURL": "https://data.gov.tw",
+      "datasetDate": "2026-05-16",
+      "category": {
+        "zhTW": "停止解析涉詐網域",
+        "enUS": "Stopped-resolution scam domain"
+      }
+    },
+    {
+      "domain": "fake-investment.example.com",
+      "pathPrefix": "",
+      "riskLevel": "confirmedScam",
+      "sourceName": {
+        "zhTW": "165 假投資 / 博弈網站資料集",
+        "enUS": "165 fake investment and gambling website dataset"
+      },
+      "sourceURL": "https://data.gov.tw",
+      "datasetDate": "2026-05-16",
+      "category": {
+        "zhTW": "假投資詐騙",
+        "enUS": "Fake investment fraud"
+      }
+    },
+    {
+      "domain": "shop-promo.example.com",
+      "pathPrefix": "/checkout",
+      "riskLevel": "highRisk",
+      "sourceName": {
+        "zhTW": "數位產業署聲請停止解析清單樣本",
+        "enUS": "MODA stopped-resolution request sample"
+      },
+      "sourceURL": "https://data.gov.tw",
+      "datasetDate": "2026-05-16",
+      "category": {
+        "zhTW": "疑似電商風險",
+        "enUS": "Possible e-commerce risk"
+      }
+    },
+    {
+      "domain": "delivery-verify.example.com",
+      "pathPrefix": "/otp",
+      "riskLevel": "highRisk",
+      "sourceName": {
+        "zhTW": "物流驗證詐騙樣本資料",
+        "enUS": "Delivery verification scam sample"
+      },
+      "sourceURL": "https://data.gov.tw",
+      "datasetDate": "2026-05-16",
+      "category": {
+        "zhTW": "假物流驗證碼",
+        "enUS": "Fake delivery OTP"
+      }
+    },
+    {
+      "domain": "bank-security.example.com",
+      "pathPrefix": "/login",
+      "riskLevel": "highRisk",
+      "sourceName": {
+        "zhTW": "金融登入釣魚樣本資料",
+        "enUS": "Bank login phishing sample"
+      },
+      "sourceURL": "https://data.gov.tw",
+      "datasetDate": "2026-05-16",
+      "category": {
+        "zhTW": "假金融登入",
+        "enUS": "Fake banking login"
+      }
+    },
+    {
+      "domain": "job-offer.example.com",
+      "pathPrefix": "/line",
+      "riskLevel": "highRisk",
+      "sourceName": {
+        "zhTW": "求職與社群導流詐騙樣本資料",
+        "enUS": "Job and messaging-platform scam sample"
+      },
+      "sourceURL": "https://data.gov.tw",
+      "datasetDate": "2026-05-16",
+      "category": {
+        "zhTW": "假求職導流",
+        "enUS": "Fake job offer funnel"
+      }
+    }
+  ]
+}

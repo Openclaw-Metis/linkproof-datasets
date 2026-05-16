@@ -1,0 +1,20 @@
+name: Validate dataset
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate dataset and manifest
+        run: python3 scripts/update_manifest.py
+
+      - name: Ensure manifest is committed
+        run: git diff --exit-code manifest.json

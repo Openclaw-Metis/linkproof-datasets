@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "2026.05.sample.2",
+  "datasetURL": "scam-datasets.json",
+  "sha256": "8d2274310f6a81ea2f2d8d0af7e613f2ff76c07939f5b8b09247c186f0c5b5bc",
+  "publishedAt": "2026-05-16T00:00:00Z",
+  "minimumAppVersion": "0.1.0"
+}
