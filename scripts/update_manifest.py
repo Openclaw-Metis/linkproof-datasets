@@ -106,12 +106,16 @@ def main() -> None:
         or existing_manifest.get("minimumAppVersion")
         or "0.1.0"
     )
-    published_at = (
-        args.published_at
-        or existing_manifest.get("publishedAt")
-        or dataset.get("fetchedAt")
-        or iso_now()
-    )
+    if args.published_at:
+        published_at = args.published_at
+    elif existing_manifest.get("datasetVersion") == dataset["bundleVersion"]:
+        published_at = (
+            existing_manifest.get("publishedAt")
+            or dataset.get("fetchedAt")
+            or iso_now()
+        )
+    else:
+        published_at = dataset.get("fetchedAt") or iso_now()
 
     manifest = {
         "schemaVersion": 1,
@@ -122,10 +126,8 @@ def main() -> None:
         "minimumAppVersion": minimum_app_version,
     }
 
-    manifest_path.write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    with manifest_path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
 
 
 if __name__ == "__main__":

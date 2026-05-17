@@ -1,0 +1,39 @@
+name: Refresh public dataset
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 18 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-public-dataset
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build dataset from official sources
+        run: python3 scripts/build_dataset.py
+
+      - name: Update manifest
+        run: python3 scripts/update_manifest.py
+
+      - name: Commit and push if changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No dataset changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scam-datasets.json manifest.json
+          git commit -m "Refresh public scam dataset"
+          git push
