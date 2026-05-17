@@ -398,7 +398,113 @@ def compact_dataset_records(records: list[dict]) -> tuple[list[dict], list[dict]
     return sorted(sources_by_id.values(), key=lambda source: source["id"]), compact_records
 
 
-def build_dataset(output_path: Path, timeout: int, fetched_at: str | None) -> dict:
+def record_identities(dataset: object | None) -> set[tuple[str, str]]:
+    if not isinstance(dataset, dict):
+        return set()
+
+    records = dataset.get("records")
+    if not isinstance(records, list):
+        return set()
+
+    identities: set[tuple[str, str]] = set()
+    for record in records:
+        if not isinstance(record, dict) or not isinstance(record.get("domain"), str):
+            continue
+        path_prefix = record.get("pathPrefix", "")
+        if not isinstance(path_prefix, str):
+            path_prefix = ""
+        identities.add((record["domain"], path_prefix))
+    return identities
+
+
+def same_dataset_payload(existing: object | None, dataset: dict) -> bool:
+    return (
+        isinstance(existing, dict)
+        and existing.get("schemaVersion") == dataset.get("schemaVersion")
+        and existing.get("sources") == dataset.get("sources")
+        and existing.get("records") == dataset.get("records")
+    )
+
+
+def enforce_record_drop_guard(existing: object | None, records: list[dict], max_drop_ratio: float) -> None:
+    if not isinstance(existing, dict):
+        return
+
+    existing_records = existing.get("records")
+    if not isinstance(existing_records, list) or not existing_records:
+        return
+
+    old_count = len(existing_records)
+    new_count = len(records)
+    if new_count >= old_count * (1 - max_drop_ratio):
+        return
+
+    drop_ratio = (old_count - new_count) / old_count
+    raise ValueError(
+        "record count dropped from "
+        f"{old_count} to {new_count} ({drop_ratio:.1%}); "
+        f"maximum allowed drop is {max_drop_ratio:.1%}"
+    )
+
+
+def publication_entry(existing: object | None, dataset: dict) -> dict:
+    old_records = record_identities(existing)
+    new_records = record_identities(dataset)
+    added_records = new_records - old_records
+    removed_records = old_records - new_records
+
+    return {
+        "version": dataset["bundleVersion"],
+        "publishedAt": dataset["fetchedAt"],
+        "recordCount": len(dataset["records"]),
+        "sourceCount": len(dataset.get("sources", [])),
+        "addedRecords": len(added_records),
+        "removedRecords": len(removed_records),
+    }
+
+
+def render_changelog(publications: list[dict]) -> str:
+    lines = ["# LinkProof Dataset Changelog", ""]
+    if not publications:
+        lines.append("No dataset publications recorded yet.")
+        return "\n".join(lines) + "\n"
+
+    for entry in publications:
+        lines.append(f"## {entry['version']} - {entry['publishedAt']}")
+        lines.append("")
+        lines.append(f"- Records: {entry['recordCount']:,}")
+        lines.append(f"- Sources: {entry['sourceCount']:,}")
+        lines.append(f"- Added records: {entry['addedRecords']:,}")
+        lines.append(f"- Removed records: {entry['removedRecords']:,}")
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def update_release_artifacts(
+    publications_path: Path,
+    changelog_path: Path,
+    existing: object | None,
+    dataset: dict,
+) -> None:
+    loaded_publications = load_json(publications_path)
+    publications = loaded_publications if isinstance(loaded_publications, list) else []
+    publications = [entry for entry in publications if isinstance(entry, dict)]
+
+    dataset_changed = not same_dataset_payload(existing, dataset)
+    has_current_entry = any(entry.get("version") == dataset["bundleVersion"] for entry in publications)
+    if not dataset_changed and has_current_entry and changelog_path.exists():
+        return
+
+    baseline = existing if dataset_changed else None
+    current_entry = publication_entry(baseline, dataset)
+    publications = [entry for entry in publications if entry.get("version") != current_entry["version"]]
+    publications.insert(0, current_entry)
+
+    write_json(publications_path, publications)
+    changelog_path.write_text(render_changelog(publications), encoding="utf-8", newline="\n")
+
+
+def build_dataset(output_path: Path, timeout: int, fetched_at: str | None, max_record_drop_ratio: float) -> dict:
     source_records: list[tuple[SourceSpec, list[dict]]] = []
     for source in SOURCES:
         text = fetch_text(source.raw_url, timeout)
@@ -416,6 +522,7 @@ def build_dataset(output_path: Path, timeout: int, fetched_at: str | None) -> di
     sources, compact_records = compact_dataset_records(records)
 
     existing = load_json(output_path)
+    enforce_record_drop_guard(existing, compact_records, max_record_drop_ratio)
     if (
         isinstance(existing, dict)
         and existing.get("schemaVersion") == 2
@@ -445,10 +552,18 @@ def main() -> None:
     parser.add_argument("--output", default="scam-datasets.json", type=Path)
     parser.add_argument("--timeout", default=60, type=int)
     parser.add_argument("--fetched-at", default=None)
+    parser.add_argument("--changelog", default="CHANGELOG.md", type=Path)
+    parser.add_argument("--publications", default="publications.json", type=Path)
+    parser.add_argument("--max-record-drop-ratio", default=0.2, type=float)
     args = parser.parse_args()
 
-    dataset = build_dataset(args.output, args.timeout, args.fetched_at)
+    if args.max_record_drop_ratio < 0 or args.max_record_drop_ratio > 1:
+        parser.error("--max-record-drop-ratio must be between 0 and 1")
+
+    existing = load_json(args.output)
+    dataset = build_dataset(args.output, args.timeout, args.fetched_at, args.max_record_drop_ratio)
     write_json(args.output, dataset)
+    update_release_artifacts(args.publications, args.changelog, existing, dataset)
 
 
 if __name__ == "__main__":

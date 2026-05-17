@@ -11,6 +11,8 @@ Public risk dataset bundles for LinkProof.
 
 - `scam-datasets.json`: LinkProof risk dataset consumed by the mobile apps.
 - `manifest.json`: Version, checksum, and dataset URL used by app update checks.
+- `publications.json`: Machine-readable release history for generated dataset bundles.
+- `CHANGELOG.md`: Human-readable summary of published dataset changes.
 - `SOURCES.md`: Official source list and normalization rules.
 - `scripts/build_dataset.py`: Fetches official Taiwan government open-data feeds and rebuilds `scam-datasets.json`.
 - `scripts/update_manifest.py`: Validates the dataset and regenerates `manifest.json`.
@@ -57,16 +59,18 @@ Public risk dataset bundles for LinkProof.
    python scripts/build_dataset.py
    ```
 
+   The build fails if the generated record count drops more than 20% from the committed dataset, which protects against partial upstream outages. Use `--max-record-drop-ratio` only for an intentional source reset.
+
 2. Regenerate the manifest:
 
    ```sh
    python scripts/update_manifest.py
    ```
 
-3. Commit both `scam-datasets.json` and `manifest.json`.
+3. Commit `scam-datasets.json`, `manifest.json`, `publications.json`, and `CHANGELOG.md`.
 4. Push to `main`.
 
-The scheduled `Refresh public dataset` GitHub Actions workflow runs the same build and manifest commands daily at 02:20 Asia/Taipei and commits only when generated files change.
+The scheduled `Refresh public dataset` GitHub Actions workflow runs the same build and manifest commands daily at 02:20 Asia/Taipei and commits only when generated files change. Each changed build prepends a release record to `publications.json` and regenerates `CHANGELOG.md`.
 
 ## Manual Validation
 
@@ -75,6 +79,7 @@ Run:
 ```sh
 python -m py_compile scripts/build_dataset.py scripts/update_manifest.py
 python scripts/update_manifest.py
+python -m json.tool publications.json > /dev/null
 git diff --exit-code manifest.json
 ```
 
