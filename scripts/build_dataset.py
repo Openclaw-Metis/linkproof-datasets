@@ -5,21 +5,18 @@ import datetime as dt
 import hashlib
 import io
 import json
+import os
 import re
 import sys
-import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
 
-
-RISK_PRIORITY = {
-    "confirmedScam": 3,
-    "highRisk": 2,
-    "needsVerification": 1,
-    "noPublicReport": 0,
-}
+from fetch_phishtank import MIN_RECORDS as PHISHTANK_MIN_RECORDS
+from fetch_phishtank import PHISHTANK_SOURCE_ID, fetch_phishtank, transform as transform_phishtank
+from merge_sources import merge_records
+from normalize_domain import normalize_dataset_domain, normalize_dataset_path
 
 
 @dataclass(frozen=True)
@@ -35,6 +32,8 @@ class SourceSpec:
     priority: int
     min_records: int
     parser: str
+    compact_source_id: str | None = None
+    cache_filename: str | None = None
 
 
 SOURCES = [
@@ -52,8 +51,9 @@ SOURCES = [
         category_en="Stopped-resolution scam website",
         risk_level="confirmedScam",
         priority=300,
-        min_records=100,
+        min_records=1000,
         parser="npa_stopped_resolution",
+        cache_filename="165-stopped-resolution.json",
     ),
     SourceSpec(
         source_id="moda-ecommerce-rpz",
@@ -65,8 +65,9 @@ SOURCES = [
         category_en="E-commerce scam stopped-resolution domain",
         risk_level="confirmedScam",
         priority=250,
-        min_records=100,
+        min_records=500,
         parser="moda_ecommerce_rpz",
+        cache_filename="digi-gov-tw.json",
     ),
     SourceSpec(
         source_id="npa-fake-investment",
@@ -82,10 +83,27 @@ SOURCES = [
         category_en="Fake investment or gambling website",
         risk_level="confirmedScam",
         priority=200,
-        min_records=100,
+        min_records=1000,
         parser="npa_fake_investment",
+        cache_filename="165-fake-investment.json",
     ),
 ]
+
+PHISHTANK_SOURCE = SourceSpec(
+    source_id=PHISHTANK_SOURCE_ID,
+    raw_url="https://www.phishtank.com/",
+    page_url="https://www.phishtank.com/",
+    source_name_zh="PhishTank 社群釣魚情資",
+    source_name_en="PhishTank community phishing data",
+    category_zh="釣魚網站",
+    category_en="Phishing site",
+    risk_level="highRisk",
+    priority=100,
+    min_records=PHISHTANK_MIN_RECORDS,
+    parser="phishtank",
+    compact_source_id=PHISHTANK_SOURCE_ID,
+    cache_filename="phishtank.json",
+)
 
 
 def utc_now() -> str:
@@ -196,43 +214,7 @@ def parse_date(value: str | None) -> str | None:
 
 
 def normalize_domain(value: str | None) -> str | None:
-    if not value:
-        return None
-
-    candidate = value.strip().strip("\"'`")
-    candidate = candidate.replace("\u3000", "").replace(" ", "")
-    candidate = candidate.removeprefix("*.").removeprefix(".")
-    if not candidate:
-        return None
-
-    if "://" not in candidate and any(separator in candidate for separator in ["/", "?", "#"]):
-        candidate = f"https://{candidate}"
-
-    parsed = urllib.parse.urlparse(candidate if "://" in candidate else f"//{candidate}", scheme="https")
-    host = parsed.hostname or candidate.split("/", 1)[0].split("?", 1)[0].split("#", 1)[0]
-    host = host.strip().strip(".").lower()
-    if not host:
-        return None
-
-    try:
-        host = host.encode("idna").decode("ascii")
-    except UnicodeError:
-        return None
-
-    if not is_valid_domain(host):
-        return None
-    return host
-
-
-def is_valid_domain(domain: str) -> bool:
-    if len(domain) > 253 or "." not in domain:
-        return False
-    if re.fullmatch(r"\d+(?:\.\d+){3}", domain):
-        return False
-    if not re.fullmatch(r"[a-z0-9.-]+", domain):
-        return False
-    labels = domain.split(".")
-    return all(0 < len(label) <= 63 and not label.startswith("-") and not label.endswith("-") for label in labels)
+    return normalize_dataset_domain(value)
 
 
 def category_en_for_npa_stopped(category_zh: str | None, fallback: str) -> str:
@@ -254,7 +236,7 @@ def make_record(
     category_zh: str | None = None,
     category_en: str | None = None,
 ) -> dict:
-    return {
+    record = {
         "domain": domain,
         "pathPrefix": "",
         "riskLevel": source.risk_level,
@@ -269,6 +251,9 @@ def make_record(
             "enUS": category_en or source.category_en,
         },
     }
+    if source.compact_source_id:
+        record["_sourceID"] = source.compact_source_id
+    return record
 
 
 def parse_npa_stopped_resolution(text: str, source: SourceSpec) -> list[dict]:
@@ -324,36 +309,71 @@ def parse_npa_fake_investment(text: str, source: SourceSpec) -> list[dict]:
     return records
 
 
+def expand_compact_source_records(source: SourceSpec, records: list[dict]) -> list[dict]:
+    expanded = []
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+
+        raw_domain = record.get("domain") if isinstance(record.get("domain"), str) else None
+        raw_path = record.get("pathPrefix", "") if isinstance(record.get("pathPrefix", ""), str) else ""
+        domain = normalize_dataset_domain(raw_domain)
+        path_prefix = normalize_dataset_path(raw_path)
+        dataset_date = parse_date(record.get("datasetDate")) if isinstance(record.get("datasetDate"), str) else None
+        if not domain or path_prefix is None:
+            continue
+
+        expanded.append(make_record(source, domain, dataset_date, category_zh=source.category_zh, category_en=source.category_en) | {"pathPrefix": path_prefix})
+    return expanded
+
+
+def compact_source_records(records: list[dict]) -> list[dict]:
+    compact = []
+    for record in records:
+        compact_record = {
+            "domain": record["domain"],
+            "pathPrefix": record.get("pathPrefix", ""),
+            "datasetDate": record["datasetDate"],
+        }
+        if record.get("_sourceID"):
+            compact_record["sourceID"] = record["_sourceID"]
+        compact.append(compact_record)
+    return sorted(compact, key=lambda record: (record["domain"], record.get("pathPrefix", "")))
+
+
+def write_source_cache(source_output_dir: Path | None, source: SourceSpec, records: list[dict]) -> None:
+    if source_output_dir is None or not source.cache_filename:
+        return
+
+    source_output_dir.mkdir(parents=True, exist_ok=True)
+    write_json(source_output_dir / source.cache_filename, compact_source_records(records))
+
+
+def load_phishtank_records(
+    source: SourceSpec,
+    api_key: str | None,
+    fixture_path: Path | None,
+    allow_small_fixture: bool,
+) -> list[dict]:
+    if fixture_path is not None:
+        raw = load_json(fixture_path)
+        if not isinstance(raw, list):
+            raise ValueError("PhishTank fixture must be a JSON array")
+    else:
+        raw = fetch_phishtank(api_key or "")
+
+    compact_records = transform_phishtank(raw)
+    if len(compact_records) < source.min_records and not (fixture_path is not None and allow_small_fixture):
+        raise ValueError(f"{source.source_id} produced only {len(compact_records)} records")
+
+    return expand_compact_source_records(source, compact_records)
+
+
 PARSERS: dict[str, Callable[[str, SourceSpec], list[dict]]] = {
     "npa_stopped_resolution": parse_npa_stopped_resolution,
     "moda_ecommerce_rpz": parse_moda_ecommerce_rpz,
     "npa_fake_investment": parse_npa_fake_investment,
 }
-
-
-def record_sort_key(record: dict) -> tuple[str, str]:
-    return (record["domain"], record["pathPrefix"])
-
-
-def should_replace(existing: dict, incoming: dict, existing_priority: int, incoming_priority: int) -> bool:
-    existing_risk = RISK_PRIORITY[existing["riskLevel"]]
-    incoming_risk = RISK_PRIORITY[incoming["riskLevel"]]
-    if incoming_risk != existing_risk:
-        return incoming_risk > existing_risk
-    if incoming_priority != existing_priority:
-        return incoming_priority > existing_priority
-    return incoming["datasetDate"] > existing["datasetDate"]
-
-
-def merge_records(source_records: list[tuple[SourceSpec, list[dict]]]) -> list[dict]:
-    merged: dict[tuple[str, str], tuple[dict, int]] = {}
-    for source, records in source_records:
-        for record in records:
-            key = (record["domain"], record["pathPrefix"])
-            current = merged.get(key)
-            if current is None or should_replace(current[0], record, current[1], source.priority):
-                merged[key] = (record, source.priority)
-    return sorted((record for record, _ in merged.values()), key=record_sort_key)
 
 
 def fingerprint_records(records: list[dict]) -> str:
@@ -362,6 +382,9 @@ def fingerprint_records(records: list[dict]) -> str:
 
 
 def source_id_for(record: dict) -> str:
+    if isinstance(record.get("_sourceID"), str) and record["_sourceID"]:
+        return record["_sourceID"]
+
     source = {
         "riskLevel": record["riskLevel"],
         "sourceName": record["sourceName"],
@@ -447,13 +470,73 @@ def enforce_record_drop_guard(existing: object | None, records: list[dict], max_
     )
 
 
-def publication_entry(existing: object | None, dataset: dict) -> dict:
+def enforce_source_drop_guard(
+    publications: object | None,
+    current_stats: dict,
+    max_drop_ratio: float,
+    allowed_sources: set[str],
+) -> None:
+    if not isinstance(publications, list) or not publications:
+        return
+
+    previous_stats = publications[0].get("sourceStats") if isinstance(publications[0], dict) else None
+    if not isinstance(previous_stats, dict):
+        return
+
+    current_sources = current_stats.get("perSource")
+    if not isinstance(current_sources, dict):
+        return
+
+    for source_id, current in current_sources.items():
+        if source_id in allowed_sources or not isinstance(current, dict):
+            continue
+
+        previous = previous_stats.get(source_id)
+        if not isinstance(previous, dict):
+            continue
+
+        old_count = previous.get("seen")
+        new_count = current.get("seen")
+        if not isinstance(old_count, int) or not isinstance(new_count, int) or old_count <= 0:
+            continue
+        if new_count >= old_count * (1 - max_drop_ratio):
+            continue
+
+        drop_ratio = (old_count - new_count) / old_count
+        raise ValueError(
+            f"{source_id} source records dropped from {old_count} to {new_count} "
+            f"({drop_ratio:.1%}); maximum allowed drop is {max_drop_ratio:.1%}"
+        )
+
+
+def print_dedupe_sanity(stats: dict) -> None:
+    per_source = stats.get("perSource")
+    if not isinstance(per_source, dict):
+        return
+
+    phishtank_stats = per_source.get(PHISHTANK_SOURCE_ID)
+    if not isinstance(phishtank_stats, dict):
+        return
+
+    seen = phishtank_stats.get("seen", 0)
+    dropped = phishtank_stats.get("droppedDedupe", 0)
+    if not isinstance(seen, int) or seen == 0 or not isinstance(dropped, int):
+        return
+
+    ratio = dropped / seen
+    if ratio < 0.05:
+        print(f"WARNING: PhishTank dedupe overlap is low ({ratio:.1%}); verify normalization if unexpected.")
+    elif ratio > 0.5:
+        print(f"WARNING: PhishTank dedupe overlap is high ({ratio:.1%}); review source value.")
+
+
+def publication_entry(existing: object | None, dataset: dict, build_stats: dict | None = None) -> dict:
     old_records = record_identities(existing)
     new_records = record_identities(dataset)
     added_records = new_records - old_records
     removed_records = old_records - new_records
 
-    return {
+    entry = {
         "version": dataset["bundleVersion"],
         "publishedAt": dataset["fetchedAt"],
         "recordCount": len(dataset["records"]),
@@ -461,6 +544,13 @@ def publication_entry(existing: object | None, dataset: dict) -> dict:
         "addedRecords": len(added_records),
         "removedRecords": len(removed_records),
     }
+    if build_stats:
+        entry["sourceStats"] = build_stats.get("perSource", {})
+        entry["dedupeStats"] = {
+            "totalSeen": build_stats.get("totalSeen", 0),
+            "deduped": build_stats.get("deduped", 0),
+        }
+    return entry
 
 
 def render_changelog(publications: list[dict]) -> str:
@@ -476,6 +566,20 @@ def render_changelog(publications: list[dict]) -> str:
         lines.append(f"- Sources: {entry['sourceCount']:,}")
         lines.append(f"- Added records: {entry['addedRecords']:,}")
         lines.append(f"- Removed records: {entry['removedRecords']:,}")
+        dedupe_stats = entry.get("dedupeStats")
+        if isinstance(dedupe_stats, dict):
+            total_seen = dedupe_stats.get("totalSeen", 0)
+            deduped = dedupe_stats.get("deduped", 0)
+            if isinstance(total_seen, int) and isinstance(deduped, int) and total_seen:
+                lines.append(f"- Dedupe: {deduped:,} of {total_seen:,} source records")
+        source_stats = entry.get("sourceStats")
+        if isinstance(source_stats, dict) and source_stats:
+            source_lines = []
+            for source_id, stats in sorted(source_stats.items()):
+                if isinstance(stats, dict) and isinstance(stats.get("seen"), int) and isinstance(stats.get("kept"), int):
+                    source_lines.append(f"{source_id} {stats['kept']:,}/{stats['seen']:,}")
+            if source_lines:
+                lines.append(f"- Source kept/seen: {', '.join(source_lines)}")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
@@ -485,6 +589,7 @@ def update_release_artifacts(
     changelog_path: Path,
     existing: object | None,
     dataset: dict,
+    build_stats: dict | None = None,
 ) -> None:
     loaded_publications = load_json(publications_path)
     publications = loaded_publications if isinstance(loaded_publications, list) else []
@@ -496,7 +601,7 @@ def update_release_artifacts(
         return
 
     baseline = existing if dataset_changed else None
-    current_entry = publication_entry(baseline, dataset)
+    current_entry = publication_entry(baseline, dataset, build_stats)
     publications = [entry for entry in publications if entry.get("version") != current_entry["version"]]
     publications.insert(0, current_entry)
 
@@ -504,7 +609,19 @@ def update_release_artifacts(
     changelog_path.write_text(render_changelog(publications), encoding="utf-8", newline="\n")
 
 
-def build_dataset(output_path: Path, timeout: int, fetched_at: str | None, max_record_drop_ratio: float) -> dict:
+def build_dataset(
+    output_path: Path,
+    timeout: int,
+    fetched_at: str | None,
+    max_record_drop_ratio: float,
+    publications_path: Path,
+    allow_source_drop: set[str],
+    phishtank_api_key: str | None,
+    phishtank_fixture: Path | None,
+    allow_small_phishtank_fixture: bool,
+    skip_phishtank: bool,
+    source_output_dir: Path | None,
+) -> tuple[dict, dict]:
     source_records: list[tuple[SourceSpec, list[dict]]] = []
     for source in SOURCES:
         text = fetch_text(source.raw_url, timeout)
@@ -513,9 +630,23 @@ def build_dataset(output_path: Path, timeout: int, fetched_at: str | None, max_r
         if len(records) < source.min_records:
             raise ValueError(f"{source.source_id} produced only {len(records)} records")
         print(f"{source.source_id}: {len(records)} raw records")
+        write_source_cache(source_output_dir, source, records)
         source_records.append((source, records))
 
-    records = merge_records(source_records)
+    if skip_phishtank:
+        print("src_phishtank: skipped")
+    else:
+        records = load_phishtank_records(
+            PHISHTANK_SOURCE,
+            phishtank_api_key,
+            phishtank_fixture,
+            allow_small_phishtank_fixture,
+        )
+        print(f"{PHISHTANK_SOURCE.source_id}: {len(records)} raw records")
+        write_source_cache(source_output_dir, PHISHTANK_SOURCE, records)
+        source_records.append((PHISHTANK_SOURCE, records))
+
+    records, stats = merge_records(source_records)
     if not records:
         raise ValueError("no usable records were produced")
 
@@ -523,6 +654,8 @@ def build_dataset(output_path: Path, timeout: int, fetched_at: str | None, max_r
 
     existing = load_json(output_path)
     enforce_record_drop_guard(existing, compact_records, max_record_drop_ratio)
+    enforce_source_drop_guard(load_json(publications_path), stats, max_record_drop_ratio, allow_source_drop)
+    print_dedupe_sanity(stats)
     if (
         isinstance(existing, dict)
         and existing.get("schemaVersion") == 2
@@ -543,8 +676,11 @@ def build_dataset(output_path: Path, timeout: int, fetched_at: str | None, max_r
         "sources": sources,
         "records": compact_records,
     }
-    print(f"merged: {len(records)} records, {len(sources)} sources, version {bundle_version}")
-    return dataset
+    print(
+        f"merged: {len(records)} records, {len(sources)} sources, "
+        f"{stats.get('deduped', 0)} deduped, version {bundle_version}"
+    )
+    return dataset, stats
 
 
 def main() -> None:
@@ -555,15 +691,33 @@ def main() -> None:
     parser.add_argument("--changelog", default="CHANGELOG.md", type=Path)
     parser.add_argument("--publications", default="publications.json", type=Path)
     parser.add_argument("--max-record-drop-ratio", default=0.2, type=float)
+    parser.add_argument("--allow-source-drop", action="append", default=[])
+    parser.add_argument("--phishtank-api-key", default=os.environ.get("PHISHTANK_API_KEY"))
+    parser.add_argument("--phishtank-fixture", default=None, type=Path)
+    parser.add_argument("--allow-small-phishtank-fixture", action="store_true")
+    parser.add_argument("--skip-phishtank", action="store_true")
+    parser.add_argument("--source-output-dir", default="sources", type=Path)
     args = parser.parse_args()
 
     if args.max_record_drop_ratio < 0 or args.max_record_drop_ratio > 1:
         parser.error("--max-record-drop-ratio must be between 0 and 1")
 
     existing = load_json(args.output)
-    dataset = build_dataset(args.output, args.timeout, args.fetched_at, args.max_record_drop_ratio)
+    dataset, stats = build_dataset(
+        args.output,
+        args.timeout,
+        args.fetched_at,
+        args.max_record_drop_ratio,
+        args.publications,
+        set(args.allow_source_drop),
+        args.phishtank_api_key,
+        args.phishtank_fixture,
+        args.allow_small_phishtank_fixture,
+        args.skip_phishtank,
+        args.source_output_dir,
+    )
     write_json(args.output, dataset)
-    update_release_artifacts(args.publications, args.changelog, existing, dataset)
+    update_release_artifacts(args.publications, args.changelog, existing, dataset, stats)
 
 
 if __name__ == "__main__":

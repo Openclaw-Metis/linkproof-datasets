@@ -1,0 +1,10 @@
+[
+  {
+    "domain": "official.example",
+    "sourceID": "src_official"
+  },
+  {
+    "domain": "phish-only.example",
+    "sourceID": "src_phishtank"
+  }
+]

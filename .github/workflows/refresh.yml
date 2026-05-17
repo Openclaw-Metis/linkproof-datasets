@@ -19,7 +19,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
-      - name: Build dataset from official sources
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dataset dependencies
+        run: python3 -m pip install -r scripts/requirements.txt
+
+      - name: Build dataset from public sources
+        env:
+          PHISHTANK_API_KEY: ${{ secrets.PHISHTANK_API_KEY }}
         run: python3 scripts/build_dataset.py
 
       - name: Update manifest
@@ -34,6 +44,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scam-datasets.json manifest.json publications.json CHANGELOG.md
+          git add scam-datasets.json manifest.json publications.json CHANGELOG.md sources
           git commit -m "Refresh public scam dataset"
           git push

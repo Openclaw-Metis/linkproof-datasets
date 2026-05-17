@@ -1,0 +1,52 @@
+[
+  {
+    "phish_id": "1001",
+    "url": "https://www.phish-only.example/login",
+    "phish_detail_url": "http://www.phishtank.com/phish_detail.php?phish_id=1001",
+    "submission_time": "2026-05-16T10:00:00+00:00",
+    "verified": "yes",
+    "verification_time": "2026-05-17T10:23:45+00:00",
+    "online": "yes",
+    "target": "Other"
+  },
+  {
+    "phish_id": "1002",
+    "url": "https://例子.中国/path",
+    "phish_detail_url": "http://www.phishtank.com/phish_detail.php?phish_id=1002",
+    "submission_time": "2026-05-16T10:00:00+00:00",
+    "verified": "yes",
+    "verification_time": "2026-05-17T11:00:00+00:00",
+    "online": "yes",
+    "target": "Other"
+  },
+  {
+    "phish_id": "1003",
+    "url": "https://offline.example",
+    "phish_detail_url": "http://www.phishtank.com/phish_detail.php?phish_id=1003",
+    "submission_time": "2026-05-16T10:00:00+00:00",
+    "verified": "yes",
+    "verification_time": "2026-05-17T11:00:00+00:00",
+    "online": "no",
+    "target": "Other"
+  },
+  {
+    "phish_id": "1004",
+    "url": "https://unverified.example",
+    "phish_detail_url": "http://www.phishtank.com/phish_detail.php?phish_id=1004",
+    "submission_time": "2026-05-16T10:00:00+00:00",
+    "verified": "no",
+    "verification_time": "2026-05-17T11:00:00+00:00",
+    "online": "yes",
+    "target": "Other"
+  },
+  {
+    "phish_id": "1005",
+    "url": "https://www.phish-only.example/other",
+    "phish_detail_url": "http://www.phishtank.com/phish_detail.php?phish_id=1005",
+    "submission_time": "2026-05-16T10:00:00+00:00",
+    "verified": "yes",
+    "verification_time": "2026-05-17T12:00:00+00:00",
+    "online": "yes",
+    "target": "Other"
+  }
+]

@@ -14,8 +14,13 @@ Public risk dataset bundles for LinkProof.
 - `publications.json`: Machine-readable release history for generated dataset bundles.
 - `CHANGELOG.md`: Human-readable summary of published dataset changes.
 - `SOURCES.md`: Official source list and normalization rules.
-- `scripts/build_dataset.py`: Fetches official Taiwan government open-data feeds and rebuilds `scam-datasets.json`.
+- `scripts/build_dataset.py`: Fetches public threat feeds and rebuilds `scam-datasets.json`.
+- `scripts/fetch_phishtank.py`: Fetches and normalizes the PhishTank online-valid phishing feed.
+- `scripts/merge_sources.py`: Applies cross-source dedupe and priority rules.
+- `scripts/normalize_domain.py`: Shared dataset-domain and path normalization helper.
+- `scripts/requirements.txt`: Python dependencies for dataset builds and tests.
 - `scripts/update_manifest.py`: Validates the dataset and regenerates `manifest.json`.
+- `sources/`: Generated per-source normalized records used for auditability.
 
 ## Dataset Format
 
@@ -53,22 +58,30 @@ Public risk dataset bundles for LinkProof.
 
 ## Update Workflow
 
-1. Rebuild the dataset from official sources:
+1. Install dataset build dependencies:
+
+   ```sh
+   python -m pip install -r scripts/requirements.txt
+   ```
+
+2. Rebuild the dataset from public sources:
 
    ```sh
    python scripts/build_dataset.py
    ```
 
-   The build fails if the generated record count drops more than 20% from the committed dataset, which protects against partial upstream outages. Use `--max-record-drop-ratio` only for an intentional source reset.
+   The scheduled production build requires `PHISHTANK_API_KEY` in GitHub Secrets. For government-only local validation without the secret, run `python scripts/build_dataset.py --skip-phishtank`.
 
-2. Regenerate the manifest:
+   The build fails if the generated record count drops more than 20% from the committed dataset, which protects against partial upstream outages. The same guard is applied per source once `sourceStats` exists in `publications.json`; use `--allow-source-drop <source-id>` only for an intentional source reset.
+
+3. Regenerate the manifest:
 
    ```sh
    python scripts/update_manifest.py
    ```
 
-3. Commit `scam-datasets.json`, `manifest.json`, `publications.json`, and `CHANGELOG.md`.
-4. Push to `main`.
+4. Commit `scam-datasets.json`, `manifest.json`, `publications.json`, `CHANGELOG.md`, and changed files in `sources/`.
+5. Push to `main`.
 
 The scheduled `Refresh public dataset` GitHub Actions workflow runs the same build and manifest commands daily at 02:20 Asia/Taipei and commits only when generated files change. Each changed build prepends a release record to `publications.json` and regenerates `CHANGELOG.md`.
 
@@ -77,7 +90,9 @@ The scheduled `Refresh public dataset` GitHub Actions workflow runs the same bui
 Run:
 
 ```sh
-python -m py_compile scripts/build_dataset.py scripts/update_manifest.py
+python -m pip install -r scripts/requirements.txt
+python -m py_compile scripts/build_dataset.py scripts/update_manifest.py scripts/fetch_phishtank.py scripts/merge_sources.py scripts/normalize_domain.py
+python -m pytest tests/
 python scripts/update_manifest.py
 python -m json.tool publications.json > /dev/null
 git diff --exit-code manifest.json
