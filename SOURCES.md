@@ -25,6 +25,13 @@ The published dataset uses schema v2: shared source/category/risk metadata is st
 - **LinkProof risk level**: `highRisk`. PhishTank is not a Taiwan government source, so it cannot raise a record to `confirmedScam`.
 - **Normalization**: Domain-only for this phase; `pathPrefix` remains empty. Domains pass through the same `normalize_dataset_domain` helper as Taiwan government sources.
 
+## Declined or Spike-Only Sources
+
+Production source decisions are tracked in `THREAT_SOURCE_EVALUATION.md`.
+
+- **OpenPhish Community Feed**: declined because commercial use requires prior written consent.
+- **URLhaus Community API / public downloads**: spike-only because commercial/for-profit use may require the enhanced commercial API, and the dataset is malware-distribution focused rather than phishing/scam focused.
+
 ## Normalization Rules
 
 - Domains are lowercased, trimmed, and IDN-encoded to ASCII when possible.

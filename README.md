@@ -14,10 +14,12 @@ Public risk dataset bundles for LinkProof.
 - `publications.json`: Machine-readable release history for generated dataset bundles.
 - `CHANGELOG.md`: Human-readable summary of published dataset changes.
 - `SOURCES.md`: Official source list and normalization rules.
+- `THREAT_SOURCE_EVALUATION.md`: Licensing and product-fit decisions for current and rejected threat sources.
 - `scripts/build_dataset.py`: Fetches public threat feeds and rebuilds `scam-datasets.json`.
 - `scripts/fetch_phishtank.py`: Fetches and normalizes the PhishTank online-valid phishing feed.
 - `scripts/merge_sources.py`: Applies cross-source dedupe and priority rules.
 - `scripts/normalize_domain.py`: Shared dataset-domain and path normalization helper.
+- `scripts/spike_urlhaus_overlap.py`: Manual URLhaus overlap spike. It is not used by production refresh.
 - `scripts/requirements.txt`: Python dependencies for dataset builds and tests.
 - `scripts/update_manifest.py`: Validates the dataset and regenerates `manifest.json`.
 - `sources/`: Generated per-source normalized records used for auditability.
@@ -101,3 +103,19 @@ git diff --exit-code manifest.json
 If `manifest.json` changes, commit the updated checksum with the dataset.
 
 The validation workflow verifies that the dataset is structurally valid and that `manifest.json` contains the current SHA-256 checksum.
+
+## Manual Threat-Source Spikes
+
+URLhaus is intentionally not a production source because its commercial-use terms are not clean enough for LinkProof's possible future monetization path. For a local data-quality spike only, run:
+
+```sh
+python scripts/spike_urlhaus_overlap.py --urlhaus-text tests/fixtures/urlhaus_text_sample.txt
+```
+
+Live URLhaus evaluation requires an explicit opt-in flag:
+
+```sh
+python scripts/spike_urlhaus_overlap.py --fetch-live --sample-size 100
+```
+
+Do not wire spike scripts into `.github/workflows/refresh.yml` or `scripts/build_dataset.py` without first updating `THREAT_SOURCE_EVALUATION.md`.

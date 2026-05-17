@@ -1,0 +1,5 @@
+# URLhaus sample fixture for local spike tests.
+http://official.example/payload.exe
+https://malware-only.example/dropper
+https://例子.中国/payload
+
