@@ -349,6 +349,20 @@ def write_source_cache(source_output_dir: Path | None, source: SourceSpec, recor
     write_json(source_output_dir / source.cache_filename, compact_source_records(records))
 
 
+def load_cached_source_records(source_output_dir: Path | None, source: SourceSpec) -> list[dict]:
+    if source_output_dir is None or not source.cache_filename:
+        return []
+
+    cached = load_json(source_output_dir / source.cache_filename)
+    if not isinstance(cached, list):
+        return []
+
+    try:
+        return expand_compact_source_records(source, cached)
+    except (KeyError, TypeError, ValueError):
+        return []
+
+
 def load_phishtank_records(
     source: SourceSpec,
     api_key: str | None,
@@ -635,18 +649,30 @@ def build_dataset(
 
     if skip_phishtank:
         print("src_phishtank: skipped by --skip-phishtank")
-    elif phishtank_fixture is None and not phishtank_api_key:
-        print("src_phishtank: skipped because PHISHTANK_API_KEY is not set")
     else:
-        records = load_phishtank_records(
-            PHISHTANK_SOURCE,
-            phishtank_api_key,
-            phishtank_fixture,
-            allow_small_phishtank_fixture,
-        )
-        print(f"{PHISHTANK_SOURCE.source_id}: {len(records)} raw records")
-        write_source_cache(source_output_dir, PHISHTANK_SOURCE, records)
-        source_records.append((PHISHTANK_SOURCE, records))
+        try:
+            records = load_phishtank_records(
+                PHISHTANK_SOURCE,
+                phishtank_api_key,
+                phishtank_fixture,
+                allow_small_phishtank_fixture,
+            )
+        except Exception as error:
+            if phishtank_fixture is not None:
+                raise
+            cached_records = load_cached_source_records(source_output_dir, PHISHTANK_SOURCE)
+            if cached_records:
+                print(
+                    f"WARNING: {PHISHTANK_SOURCE.source_id} feed could not be fetched; "
+                    f"using {len(cached_records)} cached records: {error}"
+                )
+                source_records.append((PHISHTANK_SOURCE, cached_records))
+            else:
+                print(f"WARNING: {PHISHTANK_SOURCE.source_id} skipped because the feed could not be fetched: {error}")
+        else:
+            print(f"{PHISHTANK_SOURCE.source_id}: {len(records)} raw records")
+            write_source_cache(source_output_dir, PHISHTANK_SOURCE, records)
+            source_records.append((PHISHTANK_SOURCE, records))
 
     records, stats = merge_records(source_records)
     if not records:

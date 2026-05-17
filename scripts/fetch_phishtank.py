@@ -5,10 +5,14 @@ from __future__ import annotations
 
 import argparse
 import bz2
+import csv
+import gzip
+import io
 import json
 import os
 import sys
 import time
+from dataclasses import dataclass
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -17,19 +21,55 @@ from normalize_domain import normalize_dataset_domain
 
 
 PHISHTANK_SOURCE_ID = "src_phishtank"
-PHISHTANK_URL = "https://data.phishtank.com/data/{key}/online-valid.json.bz2"
+PHISHTANK_KEYED_URL = "https://data.phishtank.com/data/{key}/online-valid.json.bz2"
+PHISHTANK_PUBLIC_URL = "https://data.phishtank.com/data/online-valid.json.bz2"
+PHISHTANK_PUBLIC_CSV_GZ_URL = "https://data.phishtank.com/data/online-valid.csv.gz"
 TIMEOUT_SECONDS = 60
 MAX_RETRIES = 3
 MIN_RECORDS = 1000
-USER_AGENT = "LinkProofDatasetBuilder/0.2 (https://github.com/Openclaw-Metis/linkproof-datasets)"
+USER_AGENT = (
+    "LinkProofDatasetBuilder/0.2 "
+    "(anti-fraud public service for Taiwan citizens; "
+    "https://github.com/Openclaw-Metis/linkproof-datasets)"
+)
 
 
-def fetch_phishtank(api_key: str) -> list[dict]:
-    if not api_key:
-        raise ValueError("PHISHTANK_API_KEY is required")
+@dataclass(frozen=True)
+class PhishTankFeed:
+    url: str
+    mode: str
+    format: str
 
-    request = Request(PHISHTANK_URL.format(key=api_key), headers={"User-Agent": USER_AGENT})
 
+def phishtank_feed_candidates(api_key: str | None) -> list[PhishTankFeed]:
+    trimmed = (api_key or "").strip()
+    if trimmed:
+        return [PhishTankFeed(PHISHTANK_KEYED_URL.format(key=trimmed), "keyed", "json-bz2")]
+    return [
+        PhishTankFeed(PHISHTANK_PUBLIC_URL, "public", "json-bz2"),
+        PhishTankFeed(PHISHTANK_PUBLIC_CSV_GZ_URL, "public", "csv-gz"),
+    ]
+
+
+def phishtank_feed_url(api_key: str | None) -> tuple[str, str]:
+    candidate = phishtank_feed_candidates(api_key)[0]
+    return candidate.url, candidate.mode
+
+
+def fetch_phishtank(api_key: str | None = None) -> list[dict]:
+    errors: list[str] = []
+    for candidate in phishtank_feed_candidates(api_key):
+        try:
+            return _fetch_candidate(candidate)
+        except RuntimeError as error:
+            errors.append(str(error))
+            print(f"WARNING: {error}", file=sys.stderr)
+
+    raise RuntimeError("; ".join(errors) if errors else "no PhishTank feed candidates configured")
+
+
+def _fetch_candidate(candidate: PhishTankFeed) -> list[dict]:
+    request = Request(candidate.url, headers={"User-Agent": USER_AGENT})
     for attempt in range(MAX_RETRIES):
         try:
             with urlopen(request, timeout=TIMEOUT_SECONDS) as response:
@@ -37,13 +77,45 @@ def fetch_phishtank(api_key: str) -> list[dict]:
                 if status != 200:
                     raise RuntimeError(f"PhishTank returned HTTP {status}")
                 payload = response.read()
-                return json.loads(bz2.decompress(payload).decode("utf-8"))
-        except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError) as error:
+                records = _parse_payload(payload, candidate.format)
+                last_modified = response.headers.get("Last-Modified", "unknown")
+                print(
+                    "PhishTank dump: "
+                    f"{len(records)} records, mode={candidate.mode}, "
+                    f"format={candidate.format}, last-modified={last_modified}"
+                )
+                return records
+        except HTTPError as error:
+            if error.code in {404, 410}:
+                raise RuntimeError(f"PhishTank feed unavailable at {candidate.url}: HTTP {error.code}") from error
+            if error.code not in {408, 429, 500, 502, 503, 504}:
+                raise RuntimeError(f"PhishTank returned HTTP {error.code}") from error
             if attempt == MAX_RETRIES - 1:
-                raise RuntimeError(f"could not fetch PhishTank feed: {error}") from error
+                raise RuntimeError(
+                    f"could not fetch PhishTank feed {candidate.url} after retryable HTTP {error.code}"
+                ) from error
+            time.sleep(2**attempt)
+        except (URLError, TimeoutError, OSError, json.JSONDecodeError, ValueError) as error:
+            if attempt == MAX_RETRIES - 1:
+                raise RuntimeError(f"could not fetch PhishTank feed {candidate.url}: {error}") from error
             time.sleep(2**attempt)
 
     raise RuntimeError("unreachable PhishTank retry state")
+
+
+def _parse_payload(payload: bytes, feed_format: str) -> list[dict]:
+    if feed_format == "json-bz2":
+        records = json.loads(bz2.decompress(payload).decode("utf-8"))
+        if not isinstance(records, list):
+            raise ValueError("PhishTank JSON feed must decode to a list")
+        return records
+
+    if feed_format == "csv-gz":
+        text = gzip.decompress(payload).decode("utf-8", errors="replace")
+        reader = csv.DictReader(io.StringIO(text))
+        return [dict(row) for row in reader]
+
+    raise ValueError(f"unsupported PhishTank feed format: {feed_format}")
 
 
 def transform(raw_records: list[dict]) -> list[dict]:

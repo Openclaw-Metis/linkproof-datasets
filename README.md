@@ -72,7 +72,7 @@ Public risk dataset bundles for LinkProof.
    python scripts/build_dataset.py
    ```
 
-   PhishTank is optional because new account registration is currently disabled for many users. If `PHISHTANK_API_KEY` exists in GitHub Secrets, the scheduled production build includes PhishTank. If the secret is absent, the build logs a skip message and still publishes the government-sourced dataset. For explicit government-only local validation, run `python scripts/build_dataset.py --skip-phishtank`.
+   PhishTank is fetched from its public `online-valid.json.bz2` dump by default, with `online-valid.csv.gz` as a public fallback when the JSON dump is rate-limited. If `PHISHTANK_API_KEY` exists in GitHub Secrets, the scheduled build uses the keyed URL for higher rate-limit headroom. If PhishTank is temporarily unavailable, the build logs a warning and reuses the last cached PhishTank source file when available; without a cache, it still publishes the government-sourced dataset. For explicit government-only local validation, run `python scripts/build_dataset.py --skip-phishtank`.
 
    The build fails if the generated record count drops more than 20% from the committed dataset, which protects against partial upstream outages. The same guard is applied per source once `sourceStats` exists in `publications.json`; use `--allow-source-drop <source-id>` only for an intentional source reset.
 

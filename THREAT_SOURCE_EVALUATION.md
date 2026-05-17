@@ -30,18 +30,23 @@ LinkProof only integrates sources whose license and operational model are clear 
 - LinkProof risk level: `confirmedScam`
 - Reason: Taiwan government source with clean open-data licensing. The dataset page notes the newer stopped-resolution dataset should be preferred for broader scope, but this legacy source still adds historical coverage.
 
-## Pending
-
 ### PhishTank
 
-- Status: technical scaffolding ready; optional at build time
+- Status: production, using public dump with optional keyed URL
 - Source: https://www.phishtank.com/
-- Developer docs: https://www.phishtank.org/developer_info.php
-- Terms: https://phishtank.org/terms.php
-- Risk level if enabled: `highRisk`
-- Current blocker: new-user registration is currently disabled at https://phishtank.org/register.php, so a new application key cannot reliably be obtained.
-- Current build behavior: if `PHISHTANK_API_KEY` exists, the refresh workflow includes PhishTank. If the key is absent, the source is skipped and government-source refresh still succeeds.
-- Re-evaluate: if registration reopens, or if an existing key is granted to LinkProof.
+- Feed: https://data.phishtank.com/data/online-valid.json.bz2, with https://data.phishtank.com/data/online-valid.csv.gz as the public fallback when the JSON dump is rate-limited.
+- Developer docs: https://dev.phishtank.com/developer_info.php
+- Terms: https://dev.phishtank.com/faq.php
+- License posture: PhishTank FAQ says API use is allowed for commercial and non-commercial purposes.
+- LinkProof risk level: `highRisk`
+- Acquisition strategy:
+  - With `PHISHTANK_API_KEY`: use keyed `online-valid.json.bz2` for higher rate-limit headroom.
+  - Without key: use the public `online-valid.json.bz2` dump; fall back to public `online-valid.csv.gz` if the JSON dump is rate-limited.
+- Build behavior: if PhishTank fetch fails, scheduled refresh logs a warning and reuses the last cached PhishTank source file when available. If no cache exists, it still publishes government-sourced records.
+- Re-evaluate triggers:
+  - PhishTank closes public dump access.
+  - PhishTank registration reopens, allowing LinkProof to obtain an application key.
+  - Daily dump consistently produces fewer than 1,000 normalized records.
 
 ## Evaluated and Declined
 
