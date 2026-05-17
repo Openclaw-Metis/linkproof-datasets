@@ -17,10 +17,11 @@ The published dataset uses schema v2: shared source/category/risk metadata is st
 ### PhishTank
 
 - **Source**: https://www.phishtank.com/
-- **Feed**: `online-valid.json.bz2`, fetched with a registered application key.
+- **Feed**: `online-valid.json.bz2`, fetched with a registered application key when available.
 - **Data**: Community-curated phishing URLs that PhishTank marks as verified and still online.
 - **Update cadence**: Upstream updates hourly; LinkProof refreshes daily.
 - **Commercial use**: PhishTank FAQ says API use is allowed for commercial and non-commercial purposes, and the Terms define API data as available for commercial use without charge.
+- **Availability note**: PhishTank registration is currently disabled for new users. LinkProof treats this as an optional source; scheduled dataset refreshes skip it when `PHISHTANK_API_KEY` is not configured.
 - **LinkProof risk level**: `highRisk`. PhishTank is not a Taiwan government source, so it cannot raise a record to `confirmedScam`.
 - **Normalization**: Domain-only for this phase; `pathPrefix` remains empty. Domains pass through the same `normalize_dataset_domain` helper as Taiwan government sources.
 

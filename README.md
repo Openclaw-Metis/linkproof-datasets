@@ -70,7 +70,7 @@ Public risk dataset bundles for LinkProof.
    python scripts/build_dataset.py
    ```
 
-   The scheduled production build requires `PHISHTANK_API_KEY` in GitHub Secrets. For government-only local validation without the secret, run `python scripts/build_dataset.py --skip-phishtank`.
+   PhishTank is optional because new account registration is currently disabled for many users. If `PHISHTANK_API_KEY` exists in GitHub Secrets, the scheduled production build includes PhishTank. If the secret is absent, the build logs a skip message and still publishes the government-sourced dataset. For explicit government-only local validation, run `python scripts/build_dataset.py --skip-phishtank`.
 
    The build fails if the generated record count drops more than 20% from the committed dataset, which protects against partial upstream outages. The same guard is applied per source once `sourceStats` exists in `publications.json`; use `--allow-source-drop <source-id>` only for an intentional source reset.
 

@@ -634,7 +634,9 @@ def build_dataset(
         source_records.append((source, records))
 
     if skip_phishtank:
-        print("src_phishtank: skipped")
+        print("src_phishtank: skipped by --skip-phishtank")
+    elif phishtank_fixture is None and not phishtank_api_key:
+        print("src_phishtank: skipped because PHISHTANK_API_KEY is not set")
     else:
         records = load_phishtank_records(
             PHISHTANK_SOURCE,
