@@ -15,6 +15,40 @@ Public risk dataset bundles for LinkProof.
 - `scripts/build_dataset.py`: Fetches official Taiwan government open-data feeds and rebuilds `scam-datasets.json`.
 - `scripts/update_manifest.py`: Validates the dataset and regenerates `manifest.json`.
 
+## Dataset Format
+
+`scam-datasets.json` uses dataset `schemaVersion` 2. Shared risk metadata is stored once in `sources`; each record references a source by `sourceID`.
+
+```json
+{
+  "schemaVersion": 2,
+  "bundleVersion": "2026.05.17.gov2.9a67d8617efc",
+  "fetchedAt": "2026-05-17T00:00:00Z",
+  "sources": [
+    {
+      "id": "src_example",
+      "riskLevel": "confirmedScam",
+      "sourceName": {
+        "zhTW": "官方來源",
+        "enUS": "Official source"
+      },
+      "sourceURL": "https://data.gov.tw/dataset/example",
+      "category": {
+        "zhTW": "涉詐網域",
+        "enUS": "Scam domain"
+      }
+    }
+  ],
+  "records": [
+    {
+      "domain": "example.test",
+      "sourceID": "src_example",
+      "datasetDate": "2026-05-17"
+    }
+  ]
+}
+```
+
 ## Update Workflow
 
 1. Rebuild the dataset from official sources:

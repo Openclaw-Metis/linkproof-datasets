@@ -38,43 +38,110 @@ def validate_dataset(dataset: object) -> dict:
 
     require_string(dataset.get("bundleVersion"), "bundleVersion")
     require_string(dataset.get("fetchedAt"), "fetchedAt")
+    schema_version = dataset.get("schemaVersion", 1)
+    if schema_version not in (1, 2):
+        raise ValueError("schemaVersion must be 1 or 2")
+
+    if schema_version == 2:
+        validate_compact_dataset(dataset)
+        return dataset
+
+    validate_legacy_dataset(dataset)
+    return dataset
+
+
+def validate_legacy_dataset(dataset: dict) -> None:
+    records = dataset.get("records")
+    if not isinstance(records, list):
+        raise ValueError("records must be an array")
+
+    seen_keys: set[tuple[str, str]] = set()
+    for index, record in enumerate(records):
+        validate_full_record(record, f"records[{index}]")
+        key = (record["domain"], record["pathPrefix"])
+        if key in seen_keys:
+            raise ValueError(f"duplicate domain/pathPrefix pair: {record['domain']}{record['pathPrefix']}")
+        seen_keys.add(key)
+
+
+
+def validate_compact_dataset(dataset: dict) -> None:
+    sources = dataset.get("sources")
+    if not isinstance(sources, list) or not sources:
+        raise ValueError("sources must be a non-empty array")
+
+    source_ids: set[str] = set()
+    for index, source in enumerate(sources):
+        if not isinstance(source, dict):
+            raise ValueError(f"sources[{index}] must be an object")
+        source_id = require_string(source.get("id"), f"sources[{index}].id")
+        if source_id in source_ids:
+            raise ValueError(f"duplicate source id: {source_id}")
+        source_ids.add(source_id)
+
+        risk_level = require_string(source.get("riskLevel"), f"sources[{index}].riskLevel")
+        if risk_level not in RISK_LEVELS:
+            raise ValueError(f"sources[{index}].riskLevel is invalid")
+        validate_localized_copy(source.get("sourceName"), f"sources[{index}].sourceName")
+        require_string(source.get("sourceURL"), f"sources[{index}].sourceURL")
+        validate_localized_copy(source.get("category"), f"sources[{index}].category")
 
     records = dataset.get("records")
     if not isinstance(records, list):
         raise ValueError("records must be an array")
 
     seen_keys: set[tuple[str, str]] = set()
-    domain_pattern = re.compile(r"^[a-z0-9.-]+$")
-
     for index, record in enumerate(records):
         if not isinstance(record, dict):
             raise ValueError(f"records[{index}] must be an object")
 
-        domain = require_string(record.get("domain"), f"records[{index}].domain").lower()
-        if not domain_pattern.match(domain) or ".." in domain or "." not in domain:
-            raise ValueError(f"records[{index}].domain is not a valid lowercase domain")
+        domain = validate_domain(record.get("domain"), f"records[{index}].domain")
 
-        path_prefix = record.get("pathPrefix")
+        path_prefix = record.get("pathPrefix", "")
         if not isinstance(path_prefix, str):
             raise ValueError(f"records[{index}].pathPrefix must be a string")
         if path_prefix and not path_prefix.startswith("/"):
             raise ValueError(f"records[{index}].pathPrefix must start with /")
 
-        risk_level = require_string(record.get("riskLevel"), f"records[{index}].riskLevel")
-        if risk_level not in RISK_LEVELS:
-            raise ValueError(f"records[{index}].riskLevel is invalid")
-
-        validate_localized_copy(record.get("sourceName"), f"records[{index}].sourceName")
-        require_string(record.get("sourceURL"), f"records[{index}].sourceURL")
+        source_id = require_string(record.get("sourceID"), f"records[{index}].sourceID")
+        if source_id not in source_ids:
+            raise ValueError(f"records[{index}].sourceID references unknown source")
         require_string(record.get("datasetDate"), f"records[{index}].datasetDate")
-        validate_localized_copy(record.get("category"), f"records[{index}].category")
 
         key = (domain, path_prefix)
         if key in seen_keys:
             raise ValueError(f"duplicate domain/pathPrefix pair: {domain}{path_prefix}")
         seen_keys.add(key)
 
-    return dataset
+
+def validate_full_record(record: object, field: str) -> None:
+    if not isinstance(record, dict):
+        raise ValueError(f"{field} must be an object")
+
+    validate_domain(record.get("domain"), f"{field}.domain")
+
+    path_prefix = record.get("pathPrefix")
+    if not isinstance(path_prefix, str):
+        raise ValueError(f"{field}.pathPrefix must be a string")
+    if path_prefix and not path_prefix.startswith("/"):
+        raise ValueError(f"{field}.pathPrefix must start with /")
+
+    risk_level = require_string(record.get("riskLevel"), f"{field}.riskLevel")
+    if risk_level not in RISK_LEVELS:
+        raise ValueError(f"{field}.riskLevel is invalid")
+
+    validate_localized_copy(record.get("sourceName"), f"{field}.sourceName")
+    require_string(record.get("sourceURL"), f"{field}.sourceURL")
+    require_string(record.get("datasetDate"), f"{field}.datasetDate")
+    validate_localized_copy(record.get("category"), f"{field}.category")
+
+
+def validate_domain(value: object, field: str) -> str:
+    domain = require_string(value, field).lower()
+    domain_pattern = re.compile(r"^[a-z0-9.-]+$")
+    if not domain_pattern.match(domain) or ".." in domain or "." not in domain:
+        raise ValueError(f"{field} is not a valid lowercase domain")
+    return domain
 
 
 def iso_now() -> str:

@@ -2,6 +2,8 @@
 
 LinkProof builds its public risk dataset from Taiwan government open-data sources. The build script normalizes each official record into `scam-datasets.json`, deduplicates by domain and path prefix, and keeps the strongest official source when multiple sources mention the same domain.
 
+The published dataset uses schema v2: shared source/category/risk metadata is stored once in `sources`, and each domain record references it by `sourceID`. This keeps the public mobile payload small without losing traceability.
+
 ## Official Sources
 
 | Source | Dataset page | Raw feed | LinkProof risk level |

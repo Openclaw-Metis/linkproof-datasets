@@ -114,8 +114,18 @@ def write_json(path: Path, value: object) -> None:
     ):
         with path.open("w", encoding="utf-8", newline="\n") as handle:
             handle.write("{\n")
+            if isinstance(value.get("schemaVersion"), int):
+                handle.write(f"  \"schemaVersion\":{value['schemaVersion']},\n")
             handle.write(f"  \"bundleVersion\":{json.dumps(value['bundleVersion'], ensure_ascii=False)},\n")
             handle.write(f"  \"fetchedAt\":{json.dumps(value['fetchedAt'], ensure_ascii=False)},\n")
+            if isinstance(value.get("sources"), list):
+                handle.write("  \"sources\":[\n")
+                sources = value["sources"]
+                for index, source in enumerate(sources):
+                    suffix = "," if index < len(sources) - 1 else ""
+                    encoded = json.dumps(source, ensure_ascii=False, separators=(",", ":"))
+                    handle.write(f"    {encoded}{suffix}\n")
+                handle.write("  ],\n")
             handle.write("  \"records\":[\n")
             records = value["records"]
             for index, record in enumerate(records):
@@ -351,6 +361,43 @@ def fingerprint_records(records: list[dict]) -> str:
     return hashlib.sha256(encoded).hexdigest()[:12]
 
 
+def source_id_for(record: dict) -> str:
+    source = {
+        "riskLevel": record["riskLevel"],
+        "sourceName": record["sourceName"],
+        "sourceURL": record["sourceURL"],
+        "category": record["category"],
+    }
+    digest = hashlib.sha256(json.dumps(source, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+    return f"src_{digest[:12]}"
+
+
+def compact_dataset_records(records: list[dict]) -> tuple[list[dict], list[dict]]:
+    sources_by_id: dict[str, dict] = {}
+    compact_records = []
+
+    for record in records:
+        source_id = source_id_for(record)
+        sources_by_id[source_id] = {
+            "id": source_id,
+            "riskLevel": record["riskLevel"],
+            "sourceName": record["sourceName"],
+            "sourceURL": record["sourceURL"],
+            "category": record["category"],
+        }
+
+        compact_record = {
+            "domain": record["domain"],
+            "sourceID": source_id,
+            "datasetDate": record["datasetDate"],
+        }
+        if record["pathPrefix"]:
+            compact_record["pathPrefix"] = record["pathPrefix"]
+        compact_records.append(compact_record)
+
+    return sorted(sources_by_id.values(), key=lambda source: source["id"]), compact_records
+
+
 def build_dataset(output_path: Path, timeout: int, fetched_at: str | None) -> dict:
     source_records: list[tuple[SourceSpec, list[dict]]] = []
     for source in SOURCES:
@@ -366,21 +413,30 @@ def build_dataset(output_path: Path, timeout: int, fetched_at: str | None) -> di
     if not records:
         raise ValueError("no usable records were produced")
 
+    sources, compact_records = compact_dataset_records(records)
+
     existing = load_json(output_path)
-    if isinstance(existing, dict) and existing.get("records") == records:
+    if (
+        isinstance(existing, dict)
+        and existing.get("schemaVersion") == 2
+        and existing.get("sources") == sources
+        and existing.get("records") == compact_records
+    ):
         bundle_version = str(existing.get("bundleVersion"))
         effective_fetched_at = str(existing.get("fetchedAt"))
     else:
         effective_fetched_at = fetched_at or utc_now()
         date_part = taipei_date_part(effective_fetched_at)
-        bundle_version = f"{date_part}.gov.{fingerprint_records(records)}"
+        bundle_version = f"{date_part}.gov2.{fingerprint_records(records)}"
 
     dataset = {
+        "schemaVersion": 2,
         "bundleVersion": bundle_version,
         "fetchedAt": effective_fetched_at,
-        "records": records,
+        "sources": sources,
+        "records": compact_records,
     }
-    print(f"merged: {len(records)} records, version {bundle_version}")
+    print(f"merged: {len(records)} records, {len(sources)} sources, version {bundle_version}")
     return dataset
 
 
