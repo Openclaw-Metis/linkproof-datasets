@@ -42,11 +42,13 @@ LinkProof only integrates sources whose license and operational model are clear 
 - Acquisition strategy:
   - With `PHISHTANK_API_KEY`: use keyed `online-valid.json.bz2` for higher rate-limit headroom.
   - Without key: use the public `online-valid.json.bz2` dump; fall back to public `online-valid.csv.gz` if the JSON dump is rate-limited.
-- Build behavior: if PhishTank fetch fails, scheduled refresh logs a warning and reuses the last cached PhishTank source file when available. If no cache exists, it still publishes government-sourced records.
+- Granularity: URL. LinkProof preserves a short path prefix instead of converting PhishTank URLs into whole-domain matches, because shared platforms can host both legitimate and phishing pages.
+- Build behavior: if PhishTank fetch fails, scheduled refresh logs a warning and reuses the last cached PhishTank source file only when the cache passes the known-legitimate-domain guard. If the cache is unsafe or unavailable, it still publishes government-sourced records and skips PhishTank for that bundle.
 - Re-evaluate triggers:
   - PhishTank closes public dump access.
   - PhishTank registration reopens, allowing LinkProof to obtain an application key.
   - Daily dump consistently produces fewer than 1,000 normalized records.
+  - A shared-platform false positive appears in dogfooding or App Store review.
 
 ## Evaluated and Declined
 

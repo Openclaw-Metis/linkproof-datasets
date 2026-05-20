@@ -21,9 +21,9 @@ The published dataset uses schema v2: shared source/category/risk metadata is st
 - **Data**: Community-curated phishing URLs that PhishTank marks as verified and still online.
 - **Update cadence**: Upstream updates hourly; LinkProof refreshes daily.
 - **Commercial use**: PhishTank FAQ says API use is allowed for commercial and non-commercial purposes, and the Terms define API data as available for commercial use without charge.
-- **Availability note**: PhishTank registration is currently disabled for new users, but the public dump does not require an application key. LinkProof uses a descriptive User-Agent and reuses the last cached PhishTank source file during upstream rate limits when available, so Taiwan government sources can still publish.
+- **Availability note**: PhishTank registration is currently disabled for new users, but the public dump does not require an application key. LinkProof uses a descriptive User-Agent. When upstream rate limits block refresh, LinkProof only reuses a cached PhishTank source file if it passes the domain-only false-positive guard; otherwise the build skips PhishTank and still publishes Taiwan government sources.
 - **LinkProof risk level**: `highRisk`. PhishTank is not a Taiwan government source, so it cannot raise a record to `confirmedScam`.
-- **Normalization**: Domain-only for this phase; `pathPrefix` remains empty. Domains pass through the same `normalize_dataset_domain` helper as Taiwan government sources.
+- **Normalization**: PhishTank is URL-granular. LinkProof keeps the normalized domain plus a short `pathPrefix` from the first two path segments, so shared platforms such as Google, GitHub Pages, Notion, Firebase, and Netlify are not flagged at the whole-domain level. Shared-platform root URLs without a path are skipped.
 
 ## Declined or Spike-Only Sources
 

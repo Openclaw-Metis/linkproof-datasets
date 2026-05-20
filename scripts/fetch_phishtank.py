@@ -15,9 +15,10 @@ import time
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
-from normalize_domain import normalize_dataset_domain
+from normalize_domain import normalize_dataset_domain, normalize_dataset_path
 
 
 PHISHTANK_SOURCE_ID = "src_phishtank"
@@ -32,6 +33,46 @@ USER_AGENT = (
     "(anti-fraud public service for Taiwan citizens; "
     "https://github.com/Openclaw-Metis/linkproof-datasets)"
 )
+
+SHARED_PLATFORM_DOMAINS = {
+    "google.com",
+    "sites.google.com",
+    "docs.google.com",
+    "drive.google.com",
+    "forms.gle",
+    "appspot.com",
+    "microsoft.com",
+    "office.com",
+    "live.com",
+    "outlook.com",
+    "sharepoint.com",
+    "onedrive.live.com",
+    "forms.office.com",
+    "github.com",
+    "github.io",
+    "gist.github.com",
+    "firebaseapp.com",
+    "web.app",
+    "vercel.app",
+    "netlify.app",
+    "pages.dev",
+    "amazonaws.com",
+    "cloudfront.net",
+    "azurewebsites.net",
+    "weebly.com",
+    "wix.com",
+    "wordpress.com",
+    "squarespace.com",
+    "notion.site",
+    "notion.so",
+    "medium.com",
+    "linkedin.com",
+    "typeform.com",
+    "jotform.com",
+    "dropbox.com",
+    "box.com",
+    "blogspot.com",
+}
 
 
 @dataclass(frozen=True)
@@ -119,32 +160,64 @@ def _parse_payload(payload: bytes, feed_format: str) -> list[dict]:
 
 
 def transform(raw_records: list[dict]) -> list[dict]:
-    output: list[dict] = []
-    seen_domains: set[str] = set()
+    output_by_key: dict[tuple[str, str], dict] = {}
 
     for record in raw_records:
         if record.get("verified") != "yes" or record.get("online") != "yes":
             continue
 
-        domain = normalize_dataset_domain(record.get("url"))
-        if domain is None or domain in seen_domains:
+        url = record.get("url")
+        domain = normalize_dataset_domain(_hostname(url))
+        path_prefix = _path_prefix(url)
+        if domain is None or path_prefix is None:
+            continue
+        if is_shared_platform_domain(domain) and not path_prefix:
             continue
 
         dataset_date = _date_part(record.get("verification_time")) or _date_part(record.get("submission_time"))
         if dataset_date is None:
             continue
 
-        seen_domains.add(domain)
-        output.append(
-            {
-                "domain": domain,
-                "pathPrefix": "",
-                "sourceID": PHISHTANK_SOURCE_ID,
-                "datasetDate": dataset_date,
-            }
-        )
+        key = (domain, path_prefix)
+        candidate = {
+            "domain": domain,
+            "pathPrefix": path_prefix,
+            "sourceID": PHISHTANK_SOURCE_ID,
+            "datasetDate": dataset_date,
+        }
+        existing = output_by_key.get(key)
+        if existing is None or dataset_date > existing["datasetDate"]:
+            output_by_key[key] = candidate
 
-    return sorted(output, key=lambda record: (record["domain"], record["pathPrefix"]))
+    return sorted(output_by_key.values(), key=lambda record: (record["domain"], record["pathPrefix"]))
+
+
+def is_shared_platform_domain(domain: str) -> bool:
+    return any(domain == shared or domain.endswith(f".{shared}") for shared in SHARED_PLATFORM_DOMAINS)
+
+
+def _hostname(value: object) -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        parsed = urlparse(value)
+    except ValueError:
+        return None
+    return parsed.hostname
+
+
+def _path_prefix(value: object) -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        parsed = urlparse(value)
+    except ValueError:
+        return None
+
+    segments = [segment for segment in parsed.path.split("/") if segment]
+    if not segments:
+        return ""
+    return normalize_dataset_path("/" + "/".join(segments[:2]))
 
 
 def write_records(records: list[dict], output_path: Path) -> None:

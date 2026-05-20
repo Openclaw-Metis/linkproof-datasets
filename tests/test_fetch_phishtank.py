@@ -11,6 +11,7 @@ from fetch_phishtank import (
     PHISHTANK_SOURCE_ID,
     USER_AGENT,
     _parse_payload,
+    is_shared_platform_domain,
     phishtank_feed_candidates,
     phishtank_feed_url,
     transform,
@@ -73,14 +74,64 @@ def test_transform_keeps_verified_online_domains_only():
     assert records == [
         {
             "domain": "phish-only.example",
-            "pathPrefix": "",
+            "pathPrefix": "/login",
+            "sourceID": PHISHTANK_SOURCE_ID,
+            "datasetDate": "2026-05-17",
+        },
+        {
+            "domain": "phish-only.example",
+            "pathPrefix": "/other",
             "sourceID": PHISHTANK_SOURCE_ID,
             "datasetDate": "2026-05-17",
         },
         {
             "domain": "xn--fsqu00a.xn--fiqs8s",
+            "pathPrefix": "/path",
+            "sourceID": PHISHTANK_SOURCE_ID,
+            "datasetDate": "2026-05-17",
+        },
+    ]
+
+
+def test_transform_keeps_path_for_shared_platforms_and_skips_shared_roots():
+    raw_records = [
+        {
+            "url": "https://google.com/",
+            "verified": "yes",
+            "online": "yes",
+            "verification_time": "2026-05-17T01:00:00+00:00",
+        },
+        {
+            "url": "https://docs.google.com/forms/d/e/abc/viewform?usp=sharing",
+            "verified": "yes",
+            "online": "yes",
+            "verification_time": "2026-05-17T02:00:00+00:00",
+        },
+        {
+            "url": "https://example.com/",
+            "verified": "yes",
+            "online": "yes",
+            "verification_time": "2026-05-17T03:00:00+00:00",
+        },
+    ]
+
+    assert transform(raw_records) == [
+        {
+            "domain": "docs.google.com",
+            "pathPrefix": "/forms/d",
+            "sourceID": PHISHTANK_SOURCE_ID,
+            "datasetDate": "2026-05-17",
+        },
+        {
+            "domain": "example.com",
             "pathPrefix": "",
             "sourceID": PHISHTANK_SOURCE_ID,
             "datasetDate": "2026-05-17",
         },
     ]
+
+
+def test_shared_platform_suffixes_are_detected():
+    assert is_shared_platform_domain("github.io")
+    assert is_shared_platform_domain("user.github.io")
+    assert not is_shared_platform_domain("notgithub.io.example")

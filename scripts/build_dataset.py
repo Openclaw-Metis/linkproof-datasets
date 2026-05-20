@@ -12,6 +12,7 @@ import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
+from urllib.parse import urlparse
 
 from fetch_phishtank import MIN_RECORDS as PHISHTANK_MIN_RECORDS
 from fetch_phishtank import PHISHTANK_SOURCE_ID, fetch_phishtank, transform as transform_phishtank
@@ -104,6 +105,38 @@ PHISHTANK_SOURCE = SourceSpec(
     compact_source_id=PHISHTANK_SOURCE_ID,
     cache_filename="phishtank.json",
 )
+
+KNOWN_LEGITIMATE_DOMAIN_ONLY_DOMAINS = {
+    "google.com",
+    "accounts.google.com",
+    "docs.google.com",
+    "drive.google.com",
+    "sites.google.com",
+    "play.google.com",
+    "youtube.com",
+    "facebook.com",
+    "github.com",
+    "microsoft.com",
+    "apple.com",
+    "amazon.com",
+    "wikipedia.org",
+    "openai.com",
+    "anthropic.com",
+    "paypal.com",
+    "ebay.com",
+    "gov.tw",
+    "moi.gov.tw",
+    "fsc.gov.tw",
+    "165.gov.tw",
+    "yahoo.com.tw",
+    "tw.yahoo.com",
+    "pchome.com.tw",
+    "udn.com",
+    "tvbs.com.tw",
+    "ettoday.net",
+    "ltn.com.tw",
+    "chinatimes.com",
+}
 
 
 def utc_now() -> str:
@@ -235,10 +268,11 @@ def make_record(
     dataset_date: str | None,
     category_zh: str | None = None,
     category_en: str | None = None,
+    path_prefix: str = "",
 ) -> dict:
     record = {
         "domain": domain,
-        "pathPrefix": "",
+        "pathPrefix": path_prefix,
         "riskLevel": source.risk_level,
         "sourceName": {
             "zhTW": source.source_name_zh,
@@ -301,12 +335,30 @@ def parse_npa_fake_investment(text: str, source: SourceSpec) -> list[dict]:
     for row in csv_rows(text):
         if row.get("WEBSITE_NM") == "網站名稱":
             continue
-        domain = normalize_domain(row.get("WEBURL"))
+        domain, path_prefix = normalize_url_with_path(row.get("WEBURL"))
         if not domain:
             continue
         dataset_date = parse_date(row.get("STA_EDATE")) or parse_date(row.get("STA_SDATE"))
-        records.append(make_record(source, domain, dataset_date))
+        records.append(make_record(source, domain, dataset_date, path_prefix=path_prefix))
     return records
+
+
+def normalize_url_with_path(value: str | None) -> tuple[str | None, str]:
+    domain = normalize_domain(value)
+    if not domain or not value:
+        return domain, ""
+
+    try:
+        parsed = urlparse(value if "://" in value else f"https://{value}")
+    except ValueError:
+        return domain, ""
+
+    segments = [segment for segment in parsed.path.split("/") if segment]
+    if not segments:
+        return domain, ""
+
+    path_prefix = normalize_dataset_path("/" + "/".join(segments[:2]))
+    return domain, path_prefix or ""
 
 
 def expand_compact_source_records(source: SourceSpec, records: list[dict]) -> list[dict]:
@@ -523,6 +575,42 @@ def enforce_source_drop_guard(
         )
 
 
+def enforce_known_legitimate_domain_guard(sources: list[dict], records: list[dict]) -> None:
+    sources_by_id = {
+        source.get("id"): source
+        for source in sources
+        if isinstance(source, dict) and isinstance(source.get("id"), str)
+    }
+
+    for record in records:
+        domain = record.get("domain")
+        if domain not in KNOWN_LEGITIMATE_DOMAIN_ONLY_DOMAINS:
+            continue
+        if record.get("pathPrefix", ""):
+            continue
+
+        source = sources_by_id.get(record.get("sourceID"))
+        risk_level = source.get("riskLevel") if isinstance(source, dict) else None
+        if risk_level in {"confirmedScam", "highRisk", "needsVerification"}:
+            raise ValueError(
+                "domain-only risk record matches known legitimate domain: "
+                f"{domain} from {record.get('sourceID')}; require pathPrefix or drop the record"
+            )
+
+
+def contains_known_legitimate_domain_only_record(source: SourceSpec, records: list[dict]) -> bool:
+    if source.risk_level not in {"confirmedScam", "highRisk", "needsVerification"}:
+        return False
+
+    for record in records:
+        if record.get("domain") not in KNOWN_LEGITIMATE_DOMAIN_ONLY_DOMAINS:
+            continue
+        if record.get("pathPrefix", ""):
+            continue
+        return True
+    return False
+
+
 def print_dedupe_sanity(stats: dict) -> None:
     per_source = stats.get("perSource")
     if not isinstance(per_source, dict):
@@ -662,11 +750,17 @@ def build_dataset(
                 raise
             cached_records = load_cached_source_records(source_output_dir, PHISHTANK_SOURCE)
             if cached_records:
-                print(
-                    f"WARNING: {PHISHTANK_SOURCE.source_id} feed could not be fetched; "
-                    f"using {len(cached_records)} cached records: {error}"
-                )
-                source_records.append((PHISHTANK_SOURCE, cached_records))
+                if contains_known_legitimate_domain_only_record(PHISHTANK_SOURCE, cached_records):
+                    print(
+                        f"WARNING: {PHISHTANK_SOURCE.source_id} cached records use unsafe domain-only "
+                        f"matching for known legitimate domains; skipping cache after fetch failure: {error}"
+                    )
+                else:
+                    print(
+                        f"WARNING: {PHISHTANK_SOURCE.source_id} feed could not be fetched; "
+                        f"using {len(cached_records)} cached records: {error}"
+                    )
+                    source_records.append((PHISHTANK_SOURCE, cached_records))
             else:
                 print(f"WARNING: {PHISHTANK_SOURCE.source_id} skipped because the feed could not be fetched: {error}")
         else:
@@ -679,6 +773,7 @@ def build_dataset(
         raise ValueError("no usable records were produced")
 
     sources, compact_records = compact_dataset_records(records)
+    enforce_known_legitimate_domain_guard(sources, compact_records)
 
     existing = load_json(output_path)
     enforce_record_drop_guard(existing, compact_records, max_record_drop_ratio)
