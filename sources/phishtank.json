@@ -24384,12 +24384,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "app.hellosign.com",
-    "pathPrefix": "/sign/cf0e039dfeeaf5dd4278feebf447b33beebee76a",
-    "datasetDate": "2025-07-05",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "app.hubspot.com",
     "pathPrefix": "/login",
     "datasetDate": "2024-11-06",
@@ -55554,6 +55548,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "calendar.google.com",
+    "pathPrefix": "/calendar/event",
+    "datasetDate": "2026-07-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "californialstateunivrsitylosangeles.ukit.me",
     "pathPrefix": "",
     "datasetDate": "2024-04-18",
@@ -84776,7 +84776,7 @@
   {
     "domain": "google.com",
     "pathPrefix": "/share.google",
-    "datasetDate": "2026-07-06",
+    "datasetDate": "2026-07-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -126675,12 +126675,6 @@
     "domain": "linxicha.cn",
     "pathPrefix": "",
     "datasetDate": "2026-05-24",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "lioninn.co.uk",
-    "pathPrefix": "",
-    "datasetDate": "2023-04-05",
     "sourceID": "src_phishtank"
   },
   {
@@ -219774,12 +219768,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "redirect.viglink.com",
-    "pathPrefix": "",
-    "datasetDate": "2025-07-05",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "redirect63.wixsite.com",
     "pathPrefix": "/my-site-1",
     "datasetDate": "2025-11-03",
@@ -220365,12 +220353,6 @@
     "domain": "reliablesiadio.m-pages.com",
     "pathPrefix": "/tDjc6A/reliablieadio",
     "datasetDate": "2025-03-19",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "relink.is",
-    "pathPrefix": "/e81apy",
-    "datasetDate": "2025-07-05",
     "sourceID": "src_phishtank"
   },
   {
