@@ -1,5 +1,39 @@
 [
   {
+    "version": "2026.08.27.gov2.56180eb8cb18",
+    "publishedAt": "2026-08-26T20:11:20Z",
+    "recordCount": 134112,
+    "sourceCount": 15,
+    "addedRecords": 116,
+    "removedRecords": 1,
+    "sourceStats": {
+      "npa-stopped-resolution": {
+        "seen": 52907,
+        "kept": 52675,
+        "droppedDedupe": 232
+      },
+      "moda-ecommerce-rpz": {
+        "seen": 1546,
+        "kept": 1463,
+        "droppedDedupe": 83
+      },
+      "npa-fake-investment": {
+        "seen": 45215,
+        "kept": 29765,
+        "droppedDedupe": 15450
+      },
+      "src_phishtank": {
+        "seen": 50210,
+        "kept": 50209,
+        "droppedDedupe": 1
+      }
+    },
+    "dedupeStats": {
+      "totalSeen": 149878,
+      "deduped": 15766
+    }
+  },
+  {
     "version": "2026.08.26.gov2.b6791c478601",
     "publishedAt": "2026-08-25T19:02:42Z",
     "recordCount": 133997,
