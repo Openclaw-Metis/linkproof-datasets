@@ -1235,6 +1235,11 @@
     "datasetDate": "2025-03-21"
   },
   {
+    "domain": "douyin-xa.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-26"
+  },
+  {
     "domain": "dpinx.com",
     "pathPrefix": "",
     "datasetDate": "2024-03-06"
@@ -1368,6 +1373,11 @@
     "domain": "dxbiopharm.com",
     "pathPrefix": "",
     "datasetDate": "2026-02-09"
+  },
+  {
+    "domain": "dycorr.link",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-21"
   },
   {
     "domain": "dylane.online",
@@ -2320,6 +2330,11 @@
     "datasetDate": "2026-03-16"
   },
   {
+    "domain": "etmallb.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-10"
+  },
+  {
     "domain": "etmallfashion.com",
     "pathPrefix": "",
     "datasetDate": "2025-06-09"
@@ -2590,6 +2605,11 @@
     "datasetDate": "2025-03-03"
   },
   {
+    "domain": "fruus.space",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-23"
+  },
+  {
     "domain": "fsibe.top",
     "pathPrefix": "",
     "datasetDate": "2023-11-14"
@@ -2613,6 +2633,11 @@
     "domain": "fudim.top",
     "pathPrefix": "",
     "datasetDate": "2024-01-02"
+  },
+  {
+    "domain": "fulizhongxin.github.io",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-21"
   },
   {
     "domain": "fv.shopesess.vip",
@@ -3310,6 +3335,11 @@
     "datasetDate": "2024-11-22"
   },
   {
+    "domain": "jklsdjfmall.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-05"
+  },
+  {
     "domain": "jkosu.top",
     "pathPrefix": "",
     "datasetDate": "2024-09-03"
@@ -3373,6 +3403,11 @@
     "domain": "jvthbic.shop",
     "pathPrefix": "",
     "datasetDate": "2025-06-18"
+  },
+  {
+    "domain": "k8yun.cc",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-06"
   },
   {
     "domain": "karus.top",
@@ -3875,6 +3910,11 @@
     "datasetDate": "2025-05-12"
   },
   {
+    "domain": "losw.space",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-23"
+  },
+  {
     "domain": "louissse.shop",
     "pathPrefix": "",
     "datasetDate": "2025-02-04"
@@ -4330,9 +4370,34 @@
     "datasetDate": "2025-02-27"
   },
   {
+    "domain": "newdebpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
+    "domain": "newdedpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
     "domain": "newebcenter.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-04"
+  },
+  {
+    "domain": "newebcpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
+    "domain": "newebdpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-12"
+  },
+  {
+    "domain": "newebepay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
   },
   {
     "domain": "newebfast.com",
@@ -4355,6 +4420,11 @@
     "datasetDate": "2026-06-08"
   },
   {
+    "domain": "neweblpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
     "domain": "newebmax.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-04"
@@ -4363,6 +4433,176 @@
     "domain": "newebone.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-08"
+  },
+  {
+    "domain": "newebopay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-29"
+  },
+  {
+    "domain": "newebpay.bid",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-31"
+  },
+  {
+    "domain": "newebpay.biz",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-27"
+  },
+  {
+    "domain": "newebpay.ceo",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-27"
+  },
+  {
+    "domain": "newebpay.cloud",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-05"
+  },
+  {
+    "domain": "newebpay.cn",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-18"
+  },
+  {
+    "domain": "newebpay.link",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-30"
+  },
+  {
+    "domain": "newebpay.mobi",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-27"
+  },
+  {
+    "domain": "newebpay.net",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-16"
+  },
+  {
+    "domain": "newebpay.one",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-30"
+  },
+  {
+    "domain": "newebpay.org",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-20"
+  },
+  {
+    "domain": "newebpay.tel",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-20"
+  },
+  {
+    "domain": "newebpay.work",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-22"
+  },
+  {
+    "domain": "newebpay.xyz",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-06"
+  },
+  {
+    "domain": "newebpay1.bar",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-17"
+  },
+  {
+    "domain": "newebpay1.bid",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-10"
+  },
+  {
+    "domain": "newebpay1.biz",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-21"
+  },
+  {
+    "domain": "newebpay1.blog",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-14"
+  },
+  {
+    "domain": "newebpay1.club",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-10"
+  },
+  {
+    "domain": "newebpay1.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-30"
+  },
+  {
+    "domain": "newebpay1.in",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-07"
+  },
+  {
+    "domain": "newebpay1.info",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-10"
+  },
+  {
+    "domain": "newebpay1.loan",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-17"
+  },
+  {
+    "domain": "newebpay1.me",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-17"
+  },
+  {
+    "domain": "newebpay1.mobi",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-13"
+  },
+  {
+    "domain": "newebpay1.pro",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-21"
+  },
+  {
+    "domain": "newebpay1.pw",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-21"
+  },
+  {
+    "domain": "newebpay1.tires",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-24"
+  },
+  {
+    "domain": "newebpay1.ws",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-12"
+  },
+  {
+    "domain": "newebpay2.bid",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-26"
+  },
+  {
+    "domain": "newebpay2.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-17"
+  },
+  {
+    "domain": "newebpay2.mobi",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-24"
+  },
+  {
+    "domain": "newebpay2.net",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-24"
+  },
+  {
+    "domain": "newebpay2.ws",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-24"
   },
   {
     "domain": "newebpaycenter.com",
@@ -4460,6 +4700,11 @@
     "datasetDate": "2026-06-04"
   },
   {
+    "domain": "newebpays.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-11"
+  },
+  {
     "domain": "newebpayservice.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-04"
@@ -4520,6 +4765,11 @@
     "datasetDate": "2026-06-04"
   },
   {
+    "domain": "newebspay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
     "domain": "newebstar.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-04"
@@ -4540,9 +4790,49 @@
     "datasetDate": "2026-06-08"
   },
   {
+    "domain": "newebzpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
+    "domain": "newecbpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
+    "domain": "newedbpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-11"
+  },
+  {
+    "domain": "newgbpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
     "domain": "newpaytw.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-04"
+  },
+  {
+    "domain": "newsebpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-11"
+  },
+  {
+    "domain": "newtbpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
+    "domain": "newtwebpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-15"
+  },
+  {
+    "domain": "newzebpay.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-06-11"
   },
   {
     "domain": "nfxj.shop",
@@ -5700,6 +5990,11 @@
     "datasetDate": "2024-09-19"
   },
   {
+    "domain": "shopeetwxiapi.github.io",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-26"
+  },
+  {
     "domain": "shopeeura.cfd",
     "pathPrefix": "",
     "datasetDate": "2025-09-22"
@@ -6118,6 +6413,11 @@
     "domain": "tceuk.top",
     "pathPrefix": "",
     "datasetDate": "2024-04-03"
+  },
+  {
+    "domain": "tcoxlwmall.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-24"
   },
   {
     "domain": "tcxjrjg.shop",
@@ -6835,6 +7135,11 @@
     "datasetDate": "2025-06-23"
   },
   {
+    "domain": "twshopeecs.github.io",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-26"
+  },
+  {
     "domain": "twsw.info",
     "pathPrefix": "",
     "datasetDate": "2025-02-19"
@@ -7350,6 +7655,11 @@
     "datasetDate": "2025-04-09"
   },
   {
+    "domain": "xinec.space",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-23"
+  },
+  {
     "domain": "xingyun7.com",
     "pathPrefix": "",
     "datasetDate": "2026-04-30"
@@ -7423,6 +7733,16 @@
     "domain": "xpquanqiugoutw.com",
     "pathPrefix": "",
     "datasetDate": "2026-03-04"
+  },
+  {
+    "domain": "xsbgr.space",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-23"
+  },
+  {
+    "domain": "xsnds.space",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-23"
   },
   {
     "domain": "xtw.qunfcar.top",
@@ -7573,6 +7893,16 @@
     "domain": "yuzhiqq.shop",
     "pathPrefix": "",
     "datasetDate": "2024-07-11"
+  },
+  {
+    "domain": "yxflzx-arch.github.io",
+    "pathPrefix": "",
+    "datasetDate": "2026-07-21"
+  },
+  {
+    "domain": "yxflzx66-lab.github.io",
+    "pathPrefix": "",
+    "datasetDate": "2026-08-26"
   },
   {
     "domain": "yxhpy.top",
