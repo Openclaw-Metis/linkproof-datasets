@@ -1,7 +1,7 @@
 {
   "schemaVersion":2,
-  "bundleVersion":"2026.09.03.gov2.87192e31421e",
-  "fetchedAt":"2026-09-02T21:07:52Z",
+  "bundleVersion":"2026.09.04.gov2.2f49bbb7e9a3",
+  "fetchedAt":"2026-09-03T21:07:41Z",
   "sources":[
     {"id":"src_0a6419d8d6ec","riskLevel":"confirmedScam","sourceName":{"zhTW":"數位發展部數位產業署聲請詐騙網域名稱停止解析網址清單","enUS":"MODA Administration for Digital Industries scam-domain stop-resolution list"},"sourceURL":"https://data.gov.tw/dataset/165027","category":{"zhTW":"電商詐騙停止解析網域","enUS":"E-commerce scam stopped-resolution domain"}},
     {"id":"src_0f9525943e01","riskLevel":"confirmedScam","sourceName":{"zhTW":"165反詐騙諮詢專線_遭停止解析涉詐網站","enUS":"165 anti-fraud stopped-resolution scam websites"},"sourceURL":"https://data.gov.tw/dataset/176455","category":{"zhTW":"遭停止解析涉詐網站：政府機構與國營事業","enUS":"Stopped-resolution scam website"}},
@@ -19058,6 +19058,7 @@
     {"domain":"bio.now","sourceID":"src_phishtank","datasetDate":"2025-09-09","pathPrefix":"/supvoicexf"},
     {"domain":"bio.search1211.site","sourceID":"src_b99b8745f522","datasetDate":"2026-01-01"},
     {"domain":"bio.site","sourceID":"src_phishtank","datasetDate":"2026-04-21","pathPrefix":"/clientesbhdganar_2026"},
+    {"domain":"bio.site","sourceID":"src_phishtank","datasetDate":"2026-09-03","pathPrefix":"/cuscatlasv"},
     {"domain":"bio.site","sourceID":"src_phishtank","datasetDate":"2026-04-22","pathPrefix":"/desbloquear_bhd_loguin"},
     {"domain":"bio.small1006.shop","sourceID":"src_b99b8745f522","datasetDate":"2025-12-01"},
     {"domain":"bio.to","sourceID":"src_phishtank","datasetDate":"2024-11-21","pathPrefix":"/autopassnor"},
@@ -117381,6 +117382,7 @@
     {"domain":"toux.tuoxinz.com","sourceID":"src_fbf81c353e14","datasetDate":"2024-12-31"},
     {"domain":"tovex.buzz","sourceID":"src_b99b8745f522","datasetDate":"2026-04-01"},
     {"domain":"tovipspc24.com","sourceID":"src_fbf81c353e14","datasetDate":"2023-06-18","pathPrefix":"/jm3ajlp"},
+    {"domain":"towerbanks.com","sourceID":"src_phishtank","datasetDate":"2026-09-03"},
     {"domain":"townhallpro.myportfolio.com","sourceID":"src_phishtank","datasetDate":"2023-01-24"},
     {"domain":"towwp.com","sourceID":"src_fbf81c353e14","datasetDate":"2025-02-14"},
     {"domain":"toye.top","sourceID":"src_698de7eeeea9","datasetDate":"2025-12-01"},

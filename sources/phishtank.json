@@ -49447,6 +49447,12 @@
   },
   {
     "domain": "bio.site",
+    "pathPrefix": "/cuscatlasv",
+    "datasetDate": "2026-09-03",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "bio.site",
     "pathPrefix": "/desbloquear_bhd_loguin",
     "datasetDate": "2026-04-22",
     "sourceID": "src_phishtank"
@@ -286341,6 +286347,12 @@
     "domain": "touralmarocco.it",
     "pathPrefix": "/blog/wp-admin",
     "datasetDate": "2026-05-18",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "towerbanks.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-09-03",
     "sourceID": "src_phishtank"
   },
   {
