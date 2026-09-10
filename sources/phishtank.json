@@ -152376,6 +152376,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "log-bcomqsgbgcmlofzllznzmpufotjjjt.opalooman.com",
+    "pathPrefix": "/1NiIsInR5cCI6IkpXVCJ9yJvcmlnaW5hbFVybCI6Imh0dHBzOi8vbWFpbGVyLWkxZHh4dGE3aWJvbHoweG5lbXVpZms3d2dieGI1YjN5bXQzZG5lbXVpZms3d2",
+    "datasetDate": "2026-09-10",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "log-coinbase-in.framer.ai",
     "pathPrefix": "",
     "datasetDate": "2026-05-16",
@@ -249055,6 +249061,12 @@
   },
   {
     "domain": "qrco.de",
+    "pathPrefix": "/bgyIYs",
+    "datasetDate": "2026-09-10",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "qrco.de",
     "pathPrefix": "/bgzSIu",
     "datasetDate": "2026-09-02",
     "sourceID": "src_phishtank"
@@ -255093,6 +255105,12 @@
     "domain": "roy689.github.io",
     "pathPrefix": "/phishing-demo",
     "datasetDate": "2026-07-12",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "royalbau.hu",
+    "pathPrefix": "/msn",
+    "datasetDate": "2026-09-10",
     "sourceID": "src_phishtank"
   },
   {
@@ -265014,12 +265032,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "shorturl.at",
-    "pathPrefix": "/IJQg4",
-    "datasetDate": "2026-09-08",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "shorturl.co.za",
     "pathPrefix": "/4589a845",
     "datasetDate": "2026-07-08",
@@ -265581,6 +265593,12 @@
     "domain": "simplified-number-415335.framer.app",
     "pathPrefix": "",
     "datasetDate": "2026-06-09",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "simplify-am.com",
+    "pathPrefix": "/sitelocker/roma2.php",
+    "datasetDate": "2026-09-10",
     "sourceID": "src_phishtank"
   },
   {
