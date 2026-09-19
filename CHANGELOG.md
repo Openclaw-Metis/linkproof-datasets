@@ -1,5 +1,14 @@
 # LinkProof Dataset Changelog
 
+## 2026.09.20.gov2.bef1977717e3 - 2026-09-19T20:49:15Z
+
+- Records: 136,774
+- Sources: 15
+- Added records: 64
+- Removed records: 0
+- Dedupe: 15,766 of 152,540 source records
+- Source kept/seen: moda-ecommerce-rpz 1,529/1,612, npa-fake-investment 29,765/45,215, npa-stopped-resolution 52,675/52,907, src_phishtank 52,805/52,806
+
 ## 2026.09.19.gov2.8ac874547b0b - 2026-09-18T20:59:09Z
 
 - Records: 136,710
