@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "2026.09.21.gov2.9e240363540a",
+  "datasetVersion": "2026.09.22.gov2.785e47a94418",
   "datasetURL": "scam-datasets.json",
-  "sha256": "469ce29ed3410b90a4dd17ebfc4ec9973348a8fafb29496af404082884ba8ed4",
-  "publishedAt": "2026-09-20T20:54:51Z",
+  "sha256": "a10a35e8b470116f1ddefa89969f0a211ebac5fceb32f0a623afbb92ac5962d4",
+  "publishedAt": "2026-09-21T22:02:29Z",
   "minimumAppVersion": "0.1.0"
 }
