@@ -354,6 +354,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "1ftt23.pics",
+    "pathPrefix": "/h/oferta",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "1h607.trk.elasticemail.com",
     "pathPrefix": "/tracking/click",
     "datasetDate": "2024-09-03",
@@ -588,6 +594,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "2206e990.griis.net",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "2222222226363322webbbbmaillllllllautcatorueueu47747444000.s3.eu-central-3.ionoscloud.com",
     "pathPrefix": "/sso/index.html",
     "datasetDate": "2026-11-18",
@@ -597,6 +609,12 @@
     "domain": "225.48.167.72.host.secureserver.net",
     "pathPrefix": "",
     "datasetDate": "2026-03-27",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "22ae55d80714a810.zscz.net",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -2274,12 +2292,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "5wf3tee.top",
-    "pathPrefix": "/dujr3da9/p1EErw",
-    "datasetDate": "2026-05-20",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "5wfr2we.garden",
     "pathPrefix": "/soavvevw/K5rv8g",
     "datasetDate": "2026-06-18",
@@ -2532,12 +2544,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "74-248-32-242.cprapid.com",
-    "pathPrefix": "/de/kasse.php",
-    "datasetDate": "2026-06-28",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "74562138.xyz",
     "pathPrefix": "/qa6ckkk2/cNHDG0",
     "datasetDate": "2026-05-14",
@@ -2625,6 +2631,12 @@
     "domain": "7cf3fd69.sibforms.com",
     "pathPrefix": "/serve/MUIEAPc8w3QW_D7Ud0tpaYjY5RrRxZH0gP7E6NlqcnNx4-vKYbG1UlXK1ykarPB6C_NBesA_BNo72dacE0Xkl5LTh_xVKYaZwovEAliYCXPodbyguT9po5mPpLg_c4_mCATEkfgQezESxEXgycUHcIiuVkOsBQPbK2TYvcVoCmE84CUUngBamQpaUCxA_XSroKw67de-_OjrJR3p",
     "datasetDate": "2022-03-17",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "7d5b74e42471948f.pjservice.net",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -2880,6 +2892,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "984bf90607ba6f59.xsjj.net",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "98wqui.wiki",
     "pathPrefix": "/s1fauty4/mT77dQ",
     "datasetDate": "2026-06-08",
@@ -2919,12 +2937,6 @@
     "domain": "9ez6jphbb.cc.rs6.net",
     "pathPrefix": "/tn.jsp",
     "datasetDate": "2024-09-09",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "9ffc56b19e.nxcli.io",
-    "pathPrefix": "/wp-admin/njt",
-    "datasetDate": "2026-10-30",
     "sourceID": "src_phishtank"
   },
   {
@@ -3129,12 +3141,6 @@
     "domain": "abahshah.com",
     "pathPrefix": "",
     "datasetDate": "2025-03-29",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "abc-panam.com",
-    "pathPrefix": "/dmcslf",
-    "datasetDate": "2026-08-01",
     "sourceID": "src_phishtank"
   },
   {
@@ -3393,12 +3399,6 @@
     "domain": "acces-abonnement.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-24",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "acces-espace-courriers.bolt.host",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-11",
     "sourceID": "src_phishtank"
   },
   {
@@ -4050,12 +4050,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "adoreprima.com",
-    "pathPrefix": "/PA/DUVzTTavlOw",
-    "datasetDate": "2026-11-13",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "adpunemploymentclaims.sharefile.com",
     "pathPrefix": "/getinfo/2744c5de-3c54-49e6-855b-56596da1caa3",
     "datasetDate": "2021-01-23",
@@ -4161,6 +4155,12 @@
     "domain": "affable-subtasks-609343.framer.app",
     "pathPrefix": "",
     "datasetDate": "2026-06-06",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "africanarealestate.com",
+    "pathPrefix": "/maro/baga",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -4482,6 +4482,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "aktualizacja-gov.com",
+    "pathPrefix": "/BR85M9/pl",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "akucoinlogiin.gitbook.io",
     "pathPrefix": "/us",
     "datasetDate": "2026-01-30",
@@ -4586,7 +4592,7 @@
   {
     "domain": "aletheianoesis.blogspot.si",
     "pathPrefix": "",
-    "datasetDate": "2026-11-18",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -4734,12 +4740,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro-lokalnie.23912898h54.baby",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-29",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro-lokalnie.348239h.lol",
     "pathPrefix": "",
     "datasetDate": "2026-06-21",
@@ -4821,12 +4821,6 @@
     "domain": "allegro-lokalnie.agile-107.cfd",
     "pathPrefix": "/04nhq6j5tsuf92",
     "datasetDate": "2026-10-24",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegro-lokalnie.apsaoc789102.lat",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-11",
     "sourceID": "src_phishtank"
   },
   {
@@ -4950,12 +4944,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro-lokalnie.pl-idwx9.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-17",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro-lokalnie.pl-j8d3t.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-10-10",
@@ -4977,12 +4965,6 @@
     "domain": "allegro-lokalnie.pl-ogioszenie59339231545.shop",
     "pathPrefix": "",
     "datasetDate": "2026-10-10",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegro-lokalnie.pl-ogloszenie-jaroslawkarasz-52.top",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-27",
     "sourceID": "src_phishtank"
   },
   {
@@ -5064,12 +5046,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro-lokalnie.smart01249172847230y345823743.lat",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-12",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro-lokalnie.smart94392912.baby",
     "pathPrefix": "",
     "datasetDate": "2026-06-21",
@@ -5121,12 +5097,6 @@
     "domain": "allegro.05819129.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-13",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegro.058ji56i56g35g3.skin",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-12",
     "sourceID": "src_phishtank"
   },
   {
@@ -5223,6 +5193,12 @@
     "domain": "allegro.1293910hg54.click",
     "pathPrefix": "",
     "datasetDate": "2026-11-07",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegro.1515155.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -5328,12 +5304,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.42873892.shop",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-23",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro.4399231201001.rest",
     "pathPrefix": "",
     "datasetDate": "2026-07-31",
@@ -5349,12 +5319,6 @@
     "domain": "allegro.4752399ff9.pl",
     "pathPrefix": "",
     "datasetDate": "2026-07-15",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegro.4787155.lat",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -5460,6 +5424,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegro.86235812123.com",
+    "pathPrefix": "/zNF1ysOl",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegro.8974235.lat",
     "pathPrefix": "",
     "datasetDate": "2026-11-17",
@@ -5556,12 +5526,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.aukcja8932301.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-10",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro.com-numerbiletu128312391.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-12",
@@ -5598,12 +5562,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.com-numerbiletu8319239123.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-15",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro.com-numerbiletu83219313.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-18",
@@ -5622,9 +5580,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.dk-oferta81476.sbs",
+    "domain": "allegro.dk-9431941.sbs",
     "pathPrefix": "",
-    "datasetDate": "2026-11-17",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -5688,12 +5646,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.i4381923h5-g.click",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-23",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro.id-2843inbjl42h9y87.lol",
     "pathPrefix": "",
     "datasetDate": "2026-07-22",
@@ -5718,9 +5670,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.ifeo238h6j7k-0f3.forum",
+    "domain": "allegro.id-wzyk21fx.cfd",
     "pathPrefix": "",
-    "datasetDate": "2026-10-23",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -5757,6 +5709,24 @@
     "domain": "allegro.kupterazz.icu",
     "pathPrefix": "",
     "datasetDate": "2026-11-09",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegro.letnie-okazj342353581.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegro.letnie-okazj342553181.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegro.letnie-okazje92035188.click",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -5862,12 +5832,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.lokalna548669.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-03",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro.lokalne-oferty8423.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-18",
@@ -5898,9 +5862,21 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegro.nr-0560654.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegro.nr-29snm2378.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-10-28",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegro.nr-5065043.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -6066,6 +6042,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegro.oferta029342049223.cfd",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegro.oferta278439.click",
     "pathPrefix": "",
     "datasetDate": "2026-07-24",
@@ -6168,12 +6150,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.ogloszenie-lokalne.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-12",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegro.ogoszenie-95176195.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-13",
@@ -6189,6 +6165,12 @@
     "domain": "allegro.or812899h.pics",
     "pathPrefix": "",
     "datasetDate": "2026-11-04",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegro.pe-7492104.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -6270,9 +6252,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegro.pl-2478935.sbs",
+    "domain": "allegro.pl-3942.lat",
     "pathPrefix": "",
-    "datasetDate": "2026-11-15",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -6351,12 +6333,6 @@
     "domain": "allegro.pl-numerbiletu32138491.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-08",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegro.pl-numerbiletu382138123.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-06",
     "sourceID": "src_phishtank"
   },
   {
@@ -6630,6 +6606,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegro.pm-ofertanr92753.cyou",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegro.pm-zamow73091paczke.cyou",
     "pathPrefix": "",
     "datasetDate": "2026-11-10",
@@ -6639,12 +6621,6 @@
     "domain": "allegro.po83920-3.lat",
     "pathPrefix": "",
     "datasetDate": "2026-05-09",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegro.poifu23812040.click",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-07",
     "sourceID": "src_phishtank"
   },
   {
@@ -6822,6 +6798,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegro.supremenice316.sbs",
+    "pathPrefix": "/ej2rrut4",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegro.transakcja940491.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-15",
@@ -6843,12 +6825,6 @@
     "domain": "allegrolokainie.18256342x3.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-05-08",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokainie.20120oe.shop",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-17",
     "sourceID": "src_phishtank"
   },
   {
@@ -6990,12 +6966,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokainie.sand245.cfd",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-06",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokainie.sand32-309.cfd",
     "pathPrefix": "",
     "datasetDate": "2026-11-04",
@@ -7059,12 +7029,6 @@
     "domain": "allegrolokalne.8078794.cc",
     "pathPrefix": "",
     "datasetDate": "2026-10-13",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalne.8h723810.xyz",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-27",
     "sourceID": "src_phishtank"
   },
   {
@@ -7158,6 +7122,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.01097978.sbs",
+    "pathPrefix": "/logowanie/22404",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.01384921634.shop",
     "pathPrefix": "",
     "datasetDate": "2026-05-17",
@@ -7197,6 +7167,12 @@
     "domain": "allegrolokalnie.12gg92701eeee.cfd",
     "pathPrefix": "",
     "datasetDate": "2026-09-27",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.1515155.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -7341,12 +7317,6 @@
     "domain": "allegrolokalnie.68975430.lol",
     "pathPrefix": "",
     "datasetDate": "2026-10-29",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.689776te.top",
-    "pathPrefix": "/oferta/id-osebt-Voucher-na-wakacje-o-wartosci-5000-pln",
-    "datasetDate": "2026-06-11",
     "sourceID": "src_phishtank"
   },
   {
@@ -7524,12 +7494,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.9494183.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-07-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.954236465.lat",
     "pathPrefix": "/telefon-samsung-galaxy-s26-ult/44618",
     "datasetDate": "2026-09-21",
@@ -7539,12 +7503,6 @@
     "domain": "allegrolokalnie.9823758235.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-10-06",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.983123.lat",
-    "pathPrefix": "/iphone-15-pro-256gb-93-bateria/25974",
-    "datasetDate": "2026-09-13",
     "sourceID": "src_phishtank"
   },
   {
@@ -7638,15 +7596,33 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.dbbdw.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.di-dostawczak928016.cyou",
     "pathPrefix": "",
     "datasetDate": "2026-11-05",
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.directhttps-pl.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.dk-931ogloszezeniexs734.cyou",
     "pathPrefix": "",
     "datasetDate": "2026-11-13",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.dk-9431941.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -7671,12 +7647,6 @@
     "domain": "allegrolokalnie.dk-oferta94296.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-18",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.dk-przywiezione71935spz.cyou",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-19",
     "sourceID": "src_phishtank"
   },
   {
@@ -7812,12 +7782,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.id-t4nfz9fgjht.rest",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-10",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.id-tkgfhjg4jf8.rest",
     "pathPrefix": "",
     "datasetDate": "2026-11-17",
@@ -7908,6 +7872,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.jesienne-okazje7295.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.k389-391.lat",
     "pathPrefix": "",
     "datasetDate": "2026-10-28",
@@ -7974,15 +7944,21 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.letnie-okazje1321392.shop",
+    "domain": "allegrolokalnie.letnie-okazj342353581.shop",
     "pathPrefix": "",
-    "datasetDate": "2026-11-19",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.letnie-okazje22448156.sbs",
+    "domain": "allegrolokalnie.letnie-okazj342553181.shop",
     "pathPrefix": "",
-    "datasetDate": "2026-11-13",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.letnie-okazje1321392.shop",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-19",
     "sourceID": "src_phishtank"
   },
   {
@@ -8022,15 +7998,15 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.lokalna-01920.sbs",
-    "pathPrefix": "/oferta/telefon-samsung-galaxy-z-fold7-12512gb-czarny-sm-f966bzkceue-gwarancja-do-092027-spigen-magsafe",
-    "datasetDate": "2026-07-27",
+    "domain": "allegrolokalnie.letnie-okazje92035188.click",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.lokalna-09271.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-08",
+    "domain": "allegrolokalnie.lokalna-01920.sbs",
+    "pathPrefix": "/oferta/telefon-samsung-galaxy-z-fold7-12512gb-czarny-sm-f966bzkceue-gwarancja-do-092027-spigen-magsafe",
+    "datasetDate": "2026-07-27",
     "sourceID": "src_phishtank"
   },
   {
@@ -8202,12 +8178,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.lokalna89030.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-06",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.lokalne-383712.lol",
     "pathPrefix": "",
     "datasetDate": "2026-08-29",
@@ -8274,6 +8244,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.nr-0560654.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.nr-238483smn3.sbs",
     "pathPrefix": "/oferta/xfx-merc-319-amd-radeon-rx-6800-xt-16gb-uzywana-sporadycznie",
     "datasetDate": "2026-11-13",
@@ -8295,12 +8271,6 @@
     "domain": "allegrolokalnie.nr-28sn2387m.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-10-29",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.nr-28sn2983.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-05",
     "sourceID": "src_phishtank"
   },
   {
@@ -8337,6 +8307,12 @@
     "domain": "allegrolokalnie.nr-50542145.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-19",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.nr-5065043.sbs",
+    "pathPrefix": "/konsola-sony-playstation-5-uży/22387",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -8391,6 +8367,12 @@
     "domain": "allegrolokalnie.o10202038.shop",
     "pathPrefix": "",
     "datasetDate": "2026-11-15",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.o10303010.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -8466,12 +8448,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.ofert28323910.lol",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-01",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.ofert798203.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-06",
@@ -8526,12 +8502,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.oferta-4725.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-15",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.oferta-4735.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-13",
@@ -8553,12 +8523,6 @@
     "domain": "allegrolokalnie.oferta-7354.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-14",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.oferta-7412114.cfd",
-    "pathPrefix": "/logowanie/13362",
-    "datasetDate": "2026-09-29",
     "sourceID": "src_phishtank"
   },
   {
@@ -8598,6 +8562,18 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.oferta-817831319.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.oferta-8263.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.oferta-8574155.cfd",
     "pathPrefix": "/oferta/wozek-cybex-priam-lux-4w1",
     "datasetDate": "2026-10-16",
@@ -8628,6 +8604,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.oferta-nr127837.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.oferta-pl-74212.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-10-27",
@@ -8637,6 +8619,12 @@
     "domain": "allegrolokalnie.oferta.lol",
     "pathPrefix": "",
     "datasetDate": "2026-07-31",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.oferta029342049223.cfd",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -8673,6 +8661,12 @@
     "domain": "allegrolokalnie.oferta20592640502748.shop",
     "pathPrefix": "/oferta/Nowa-gwarancja-2lata-Ps5-Pro-2Tb",
     "datasetDate": "2026-06-05",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.oferta223121.cfd",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -8832,9 +8826,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.oferta819.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-05",
+    "domain": "allegrolokalnie.oferta8271652644321.cfd",
+    "pathPrefix": "/oferta/nintendo-switch-2-gwarancja-kontroler-pro-stacja-dokujaca-bogaty-zestaw",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -8994,12 +8988,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.ogoszenie-9583315.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-13",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.okazja-na-lato-2026-56hkgrvec.sbs",
     "pathPrefix": "/oferta/Drewniany-Domek-Ogrodowy-dla-dzieci-Plac-Zabaw-WENUS-2",
     "datasetDate": "2026-05-31",
@@ -9036,6 +9024,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.pe-7492104.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.pi-4214124.cfd",
     "pathPrefix": "",
     "datasetDate": "2026-10-30",
@@ -9045,6 +9039,12 @@
     "domain": "allegrolokalnie.pi-83794874532.click",
     "pathPrefix": "",
     "datasetDate": "2026-02-24",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.pi-8592185.lat",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -9234,6 +9234,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "allegrolokalnie.pl-3942.lat",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "allegrolokalnie.pl-44783.sbs",
     "pathPrefix": "/oferta/Hulajnoga-kukirin-G4-Jak-nowa",
     "datasetDate": "2026-07-29",
@@ -9255,6 +9261,12 @@
     "domain": "allegrolokalnie.pl-48252.icu",
     "pathPrefix": "/oferta/rower-woom-3-bardzo-dobry-stan",
     "datasetDate": "2026-05-14",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.pl-482626k626366oferta0292637387373.sbs",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -9369,12 +9381,6 @@
     "domain": "allegrolokalnie.pl-844274.icu",
     "pathPrefix": "",
     "datasetDate": "2026-11-18",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.pl-847261842.lol",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-23",
     "sourceID": "src_phishtank"
   },
   {
@@ -9588,9 +9594,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.pl-oferta-prywatna7484657.click",
+    "domain": "allegrolokalnie.pl-oferta-konsola-playstation-5.sbs",
     "pathPrefix": "",
-    "datasetDate": "2026-08-30",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -9645,6 +9651,12 @@
     "domain": "allegrolokalnie.pl-oferta2191290.click",
     "pathPrefix": "",
     "datasetDate": "2026-09-05",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.pl-oferta219874365.cfd",
+    "pathPrefix": "/oferta/karta-graficzna-nvidia-geforce-rtx-4070-12gb",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -9726,12 +9738,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.pl-oferta6633.cfd",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.pl-oferta6645234444.cfd",
     "pathPrefix": "",
     "datasetDate": "2026-10-19",
@@ -9747,12 +9753,6 @@
     "domain": "allegrolokalnie.pl-oferta723106578.sbs",
     "pathPrefix": "/uam",
     "datasetDate": "2026-11-07",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.pl-oferta726243.cfd",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-27",
     "sourceID": "src_phishtank"
   },
   {
@@ -9901,12 +9901,6 @@
   },
   {
     "domain": "allegrolokalnie.pl-ogloszenie-pawelwisniewski9-29.click",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-07",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.pl-ogloszenie-tomaszkaraszewski-52.click",
     "pathPrefix": "",
     "datasetDate": "2026-09-07",
     "sourceID": "src_phishtank"
@@ -10125,6 +10119,12 @@
     "domain": "allegrolokalnie.pl-zakupy9999812141.top",
     "pathPrefix": "",
     "datasetDate": "2026-10-30",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.pl-zamow-id984127481.cfd",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -10350,12 +10350,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.ploferta23189192.rest",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-24",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.pls3mfrmnfaj21xk.sbs",
     "pathPrefix": "/chat/79805d92-4472-46bb-a662-c87909916d88",
     "datasetDate": "2026-07-24",
@@ -10371,6 +10365,12 @@
     "domain": "allegrolokalnie.pm-dostawa83692.cyou",
     "pathPrefix": "",
     "datasetDate": "2026-11-10",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "allegrolokalnie.pm-ofertanr92753.cyou",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -10476,12 +10476,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.rezerwacja54278.cfd",
-    "pathPrefix": "/nowa-elektryczna-hulajnoga-kuk/53014",
-    "datasetDate": "2026-09-14",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.rezerwacja785221.click",
     "pathPrefix": "",
     "datasetDate": "2026-11-11",
@@ -10530,12 +10524,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "allegrolokalnie.smart-92492.cfd",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-11",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "allegrolokalnie.smart-94682.cfd",
     "pathPrefix": "",
     "datasetDate": "2026-11-02",
@@ -10581,12 +10569,6 @@
     "domain": "allegrolokalnie.smart-oferta49321.lol",
     "pathPrefix": "",
     "datasetDate": "2026-09-07",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "allegrolokalnie.smart-zakupy24h.shop",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-19",
     "sourceID": "src_phishtank"
   },
   {
@@ -10782,12 +10764,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "aloufa.ext-345064.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-04-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "aloyoga025.top",
     "pathPrefix": "/loading.php",
     "datasetDate": "2026-07-10",
@@ -10833,12 +10809,6 @@
     "domain": "altruistic-garlic-545573.framer.app",
     "pathPrefix": "",
     "datasetDate": "2026-06-04",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "aluile.direc5781946.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-14",
     "sourceID": "src_phishtank"
   },
   {
@@ -10998,12 +10968,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "ameli-dossiers.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-05",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "ameli-mescompte.com",
     "pathPrefix": "",
     "datasetDate": "2026-05-23",
@@ -11049,12 +11013,6 @@
     "domain": "amitys.shop",
     "pathPrefix": "/soFbneFy",
     "datasetDate": "2026-09-01",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "amli-web.com",
-    "pathPrefix": "/captcha.php",
-    "datasetDate": "2026-04-26",
     "sourceID": "src_phishtank"
   },
   {
@@ -11616,12 +11574,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "app-mercadollivreofertas.myshopify.com",
-    "pathPrefix": "/products/micro-ondas-electrolux-inox-23l-efficient-me23s",
-    "datasetDate": "2026-05-21",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "app-na1.hubspotdocuments.com",
     "pathPrefix": "/documents/8597947",
     "datasetDate": "2025-09-08",
@@ -11643,12 +11595,6 @@
     "domain": "app-promocopa2026.myshopify.com",
     "pathPrefix": "/products/micro-ondas-electrolux-inox-23l-efficient-me23s",
     "datasetDate": "2026-06-23",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "app-sparkassen.online",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-06",
     "sourceID": "src_phishtank"
   },
   {
@@ -12930,12 +12876,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "app.livelopresente.info",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-23",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "app.livelopresente.live",
     "pathPrefix": "",
     "datasetDate": "2026-10-23",
@@ -13189,12 +13129,6 @@
   },
   {
     "domain": "app.resgatelivelopresente.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-04",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "app.resgatepresentelivelo.app",
     "pathPrefix": "",
     "datasetDate": "2026-11-04",
     "sourceID": "src_phishtank"
@@ -13458,12 +13392,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "appstartledge.wixstudio.com",
-    "pathPrefix": "/us-en",
-    "datasetDate": "2026-05-02",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "appstarts-ledgur.wixstudio.com",
     "pathPrefix": "/us-en",
     "datasetDate": "2026-06-08",
@@ -13662,12 +13590,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "arizona.gov-ohid.help",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-03",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "armaancabling.com",
     "pathPrefix": "/wp-includes/ion",
     "datasetDate": "2026-07-03",
@@ -13731,12 +13653,6 @@
     "domain": "artemius-lab.ru",
     "pathPrefix": "/indexx.html",
     "datasetDate": "2025-01-26",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "artistamp.it",
-    "pathPrefix": "/email/web",
-    "datasetDate": "2026-03-15",
     "sourceID": "src_phishtank"
   },
   {
@@ -13998,12 +13914,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "at-t-communication-bccdb9.webflow.io",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-25",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "at-t-mail-update.pory.app",
     "pathPrefix": "",
     "datasetDate": "2024-10-11",
@@ -14163,12 +14073,6 @@
     "domain": "att-106505.square.site",
     "pathPrefix": "",
     "datasetDate": "2024-12-04",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "att-com247.boxmode.io",
-    "pathPrefix": "",
-    "datasetDate": "2023-02-03",
     "sourceID": "src_phishtank"
   },
   {
@@ -14562,12 +14466,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "auspost-ticket.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-07",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "auspost.customerserviceqh.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-24",
@@ -14577,6 +14475,12 @@
     "domain": "austinaskybeckcons.wixsite.com",
     "pathPrefix": "/my-site",
     "datasetDate": "2024-02-27",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "auth-att-net.weeblysite.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -14757,12 +14661,6 @@
     "domain": "auxiliogerencial.digital",
     "pathPrefix": "/acesso/aguardando",
     "datasetDate": "2026-11-18",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "avancement9230e.a6fbb0jc.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-08",
     "sourceID": "src_phishtank"
   },
   {
@@ -15120,12 +15018,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "bafkreiaenyir64abobtgzd7mbnm7pkdtm7h4afuwimopl6cqf7gfhyca6a.ipfs.dweb.link",
-    "pathPrefix": "",
-    "datasetDate": "2026-07-31",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "bafkreiagoczk7k6dffiz4t6zsrrcgrwprmrreik5y25hpivko3crpu4pl4.ipfs.dweb.link",
     "pathPrefix": "",
     "datasetDate": "2025-08-16",
@@ -15156,12 +15048,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "bafkreiaww32bm77n2jnyv3w6v4ncnd7koyalrexjty22jtcrwpsj746ps4.ipfs.dweb.link",
-    "pathPrefix": "",
-    "datasetDate": "2025-08-02",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "bafkreiazfxm573hs5m2cmctszl4syilt56zidvgezpo2ifhxs4a6i4ahi4.ipfs.dweb.link",
     "pathPrefix": "",
     "datasetDate": "2025-08-14",
@@ -15189,12 +15075,6 @@
     "domain": "bafkreibv36fzacm5fiwswmcqflobyz72cwfauk4vt6h62ykofkj2yowtkm.ipfs.dweb.link",
     "pathPrefix": "",
     "datasetDate": "2025-08-02",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "bafkreic2s6jymjein2mdhg3g4q7nlt4qcraxwmfc4cg6zp5tfuqlzhdtam.ipfs.dweb.link",
-    "pathPrefix": "",
-    "datasetDate": "2025-08-05",
     "sourceID": "src_phishtank"
   },
   {
@@ -15279,12 +15159,6 @@
     "domain": "bafkreid435a2qtt6xhzlryxszbecqu2yt7yhn2zxbkhyneubsm65zw7r7e.ipfs.dweb.link",
     "pathPrefix": "",
     "datasetDate": "2025-08-02",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "bafkreid6e5r3plyhlqmwtngtifipwtsx4fghtpejc7p2owy63ahbojp42e.ipfs.dweb.link",
-    "pathPrefix": "",
-    "datasetDate": "2025-06-29",
     "sourceID": "src_phishtank"
   },
   {
@@ -15768,12 +15642,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "baojiawuyess.icu",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-20",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "bap-gmxnetsid-fb484500709fbec4a97ca840b16f82ef5785c42.square.site",
     "pathPrefix": "",
     "datasetDate": "2024-06-07",
@@ -16080,27 +15948,21 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "bells-trendy-site-fd8b96.webflow.io",
-    "pathPrefix": "",
-    "datasetDate": "2026-04-29",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "bellsouth-att-sign-in-a94fae.webflow.io",
     "pathPrefix": "",
     "datasetDate": "2026-11-12",
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "ben44220coueron.wixsite.com",
-    "pathPrefix": "/my-site",
-    "datasetDate": "2026-10-19",
+    "domain": "bellsouth-att-verifier-sign-in-b4e4f9.webflow.io",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "benchmark.passkeyconnect.com",
-    "pathPrefix": "/sign-in",
-    "datasetDate": "2026-08-21",
+    "domain": "ben44220coueron.wixsite.com",
+    "pathPrefix": "/my-site",
+    "datasetDate": "2026-10-19",
     "sourceID": "src_phishtank"
   },
   {
@@ -16179,12 +16041,6 @@
     "domain": "best-buy-105737.weeblysite.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-20",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "best-buy-108428.weeblysite.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-25",
     "sourceID": "src_phishtank"
   },
   {
@@ -26328,12 +26184,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "bnc.ondemand-cityspay.com",
-    "pathPrefix": "/bnc/en",
-    "datasetDate": "2026-06-10",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "bncrin.cc",
     "pathPrefix": "/PaymentCollectionAccount",
     "datasetDate": "2026-11-05",
@@ -26779,12 +26629,6 @@
   },
   {
     "domain": "bradesco.biajuridicopj.digital",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-23",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "bradesco.biajuridicopj.info",
     "pathPrefix": "",
     "datasetDate": "2026-10-23",
     "sourceID": "src_phishtank"
@@ -27504,6 +27348,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "brizview.cfd",
+    "pathPrefix": "/trade",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "broadband.mvt.so",
     "pathPrefix": "",
     "datasetDate": "2025-11-03",
@@ -27555,12 +27405,6 @@
     "domain": "brookercreekcontent.com",
     "pathPrefix": "",
     "datasetDate": "2025-11-12",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "browser-metmask.wixstudio.com",
-    "pathPrefix": "/us-en",
-    "datasetDate": "2026-06-15",
     "sourceID": "src_phishtank"
   },
   {
@@ -27648,12 +27492,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "brt-he.eu.cc",
-    "pathPrefix": "/it",
-    "datasetDate": "2026-11-19",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "brt-hi.eu.cc",
     "pathPrefix": "/it",
     "datasetDate": "2026-11-19",
@@ -27678,9 +27516,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "brt-lo.sbs",
+    "domain": "brt-lr.cc",
     "pathPrefix": "/it",
-    "datasetDate": "2026-11-11",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -27714,6 +27552,42 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "brt-oe.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-oh.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-ol.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-om.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-os.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-ot.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "brt-to.eu.cc",
     "pathPrefix": "/it",
     "datasetDate": "2026-11-13",
@@ -27729,6 +27603,48 @@
     "domain": "brt-tz.eu.cc",
     "pathPrefix": "/it",
     "datasetDate": "2026-11-19",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-ua.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-uc.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-ue.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-ut.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-uv.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-ux.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "brt-uz.eu.cc",
+    "pathPrefix": "/it",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -29424,6 +29340,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "canjedirecto.click",
+    "pathPrefix": "/bac.pa",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "canjeplus.click",
     "pathPrefix": "/bac.pa",
     "datasetDate": "2026-11-18",
@@ -29658,6 +29580,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "casinowinningendless.info",
+    "pathPrefix": "/erwegryewiorueyepowegtuoowerpegtuorwpethuoorwpetiuoiropwetotarelif/8535b57410b0c4f52471b4d1c0d021457315c5e140e040819151046515451460d1317191f1157435b5c13455b5d5a574",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "cassandrahunt.com",
     "pathPrefix": "/wedding/en",
     "datasetDate": "2026-06-21",
@@ -29757,12 +29685,6 @@
     "domain": "cccjhj.com",
     "pathPrefix": "",
     "datasetDate": "2026-08-05",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "ccn.m-pages.com",
-    "pathPrefix": "/5uj2so/ccn",
-    "datasetDate": "2025-07-17",
     "sourceID": "src_phishtank"
   },
   {
@@ -29904,6 +29826,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "cedarmeadowfarm-jp.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "cedis-online.de",
     "pathPrefix": "/idn.php",
     "datasetDate": "2024-09-12",
@@ -30036,12 +29964,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "cfamaj.marge-labo.com",
-    "pathPrefix": "/-/pl-PL",
-    "datasetDate": "2026-10-27",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "cfkyb0.webwave.dev",
     "pathPrefix": "",
     "datasetDate": "2024-03-08",
@@ -30099,12 +30021,6 @@
     "domain": "chaniago10342.start.page",
     "pathPrefix": "",
     "datasetDate": "2023-07-08",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "chapelon.domici5783486.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-17",
     "sourceID": "src_phishtank"
   },
   {
@@ -30348,12 +30264,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "chatempresas.digital",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "check-in.my-trip-online.com",
     "pathPrefix": "",
     "datasetDate": "2025-08-19",
@@ -30513,12 +30423,6 @@
     "domain": "christophe.grv826151.pro",
     "pathPrefix": "",
     "datasetDate": "2026-05-18",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "chromewebstoreus.wixstudio.com",
-    "pathPrefix": "/en-us",
-    "datasetDate": "2026-06-02",
     "sourceID": "src_phishtank"
   },
   {
@@ -30852,12 +30756,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "club-gagnant.online",
-    "pathPrefix": "",
-    "datasetDate": "2025-01-20",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "clubcanje.click",
     "pathPrefix": "/bac.pa",
     "datasetDate": "2026-11-18",
@@ -30879,18 +30777,6 @@
     "domain": "clubeamigosdopedrosegundo.com.br",
     "pathPrefix": "/list/index.php",
     "datasetDate": "2017-05-04",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "clubmasn.com",
-    "pathPrefix": "/ec",
-    "datasetDate": "2026-06-26",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "clubmilesc.com",
-    "pathPrefix": "/ec",
-    "datasetDate": "2026-06-27",
     "sourceID": "src_phishtank"
   },
   {
@@ -31548,12 +31434,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "conibuseporloggi.godaddysites.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-12",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "conkueskifirmar.webcindario.com",
     "pathPrefix": "",
     "datasetDate": "2026-02-14",
@@ -31692,9 +31572,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "consolerepairs.org.uk",
-    "pathPrefix": "/newsite/wp-content",
-    "datasetDate": "2025-05-24",
+    "domain": "consolidatedweb.wixsite.com",
+    "pathPrefix": "/my-site-2",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -31776,21 +31656,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "contacto-digital.webcindario.com",
-    "pathPrefix": "",
-    "datasetDate": "2024-10-27",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "contactobancaempresas.com",
     "pathPrefix": "",
     "datasetDate": "2026-11-04",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "contacts.digitals.vu",
-    "pathPrefix": "/configurations.html",
-    "datasetDate": "2026-07-09",
     "sourceID": "src_phishtank"
   },
   {
@@ -31875,6 +31743,12 @@
     "domain": "coordinadores.ed-intra.com",
     "pathPrefix": "/Ordenes/jss",
     "datasetDate": "2026-08-06",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "copperliving-jp.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -32061,12 +31935,6 @@
     "domain": "cpanel08wh.bkk1.cloud.z.com",
     "pathPrefix": "/~cp250158/imageplus.co.th",
     "datasetDate": "2024-06-08",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "cpcontacts.129-121-126-107.cprapid.com",
-    "pathPrefix": "/login",
-    "datasetDate": "2026-08-17",
     "sourceID": "src_phishtank"
   },
   {
@@ -32400,12 +32268,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "creditoseguro--micreditopich.replit.app",
-    "pathPrefix": "",
-    "datasetDate": "2026-07-24",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "creditpichincha2026.lovable.app",
     "pathPrefix": "",
     "datasetDate": "2026-02-23",
@@ -32586,15 +32448,15 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "cuenta-activar.webcindario.com",
-    "pathPrefix": "",
-    "datasetDate": "2025-11-25",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "curaenatura.com",
     "pathPrefix": "/7pScriptCore/log",
     "datasetDate": "2022-12-27",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "currently-att-8-5-2024.weeblysite.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -32865,6 +32727,18 @@
     "domain": "d3bbdk04.eu1.hubspotlinksstarter.com",
     "pathPrefix": "/Ctc/GH+113",
     "datasetDate": "2023-03-23",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "d3ixcffzcz1zze.cloudfront.net",
+    "pathPrefix": "/gx/index.html",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "d3kuse4dk8esyh.cloudfront.net",
+    "pathPrefix": "/gx/index.html",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -33528,6 +33402,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "designloop.cc",
+    "pathPrefix": "/doz/invite",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "designskou.com",
     "pathPrefix": "",
     "datasetDate": "2026-08-11",
@@ -33561,12 +33441,6 @@
     "domain": "desktop-station.wixstudio.com",
     "pathPrefix": "/en-us",
     "datasetDate": "2026-06-06",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "desktop-us-ledgre.wixstudio.com",
-    "pathPrefix": "/live",
-    "datasetDate": "2026-05-01",
     "sourceID": "src_phishtank"
   },
   {
@@ -33789,12 +33663,6 @@
     "domain": "dgibo.netlify.app",
     "pathPrefix": "/gananet",
     "datasetDate": "2026-11-16",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "dgitalganet.netlify.app",
-    "pathPrefix": "/gananet",
-    "datasetDate": "2026-11-12",
     "sourceID": "src_phishtank"
   },
   {
@@ -34896,6 +34764,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "dlchengxin.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "dlglamy.uk.cc",
     "pathPrefix": "/my",
     "datasetDate": "2026-06-14",
@@ -35430,12 +35304,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "docto-rembourse-moi.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-16",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "docto-remboursement-aide.com",
     "pathPrefix": "/captcha.php",
     "datasetDate": "2026-08-01",
@@ -35502,12 +35370,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "docwirelosszip--ftomasmiguel.replit.app",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-07",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "docxreview.myportfolio.com",
     "pathPrefix": "",
     "datasetDate": "2023-05-24",
@@ -35565,12 +35427,6 @@
     "domain": "dongchen888.com",
     "pathPrefix": "/aBShK7uCeO.group",
     "datasetDate": "2026-10-13",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "dongwana.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-24",
     "sourceID": "src_phishtank"
   },
   {
@@ -35871,12 +35727,6 @@
     "domain": "dramatic-pause.ghost.io",
     "pathPrefix": "/critical-corner-didion-and-babitz",
     "datasetDate": "2026-05-08",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "dreamrunners028.top",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-29",
     "sourceID": "src_phishtank"
   },
   {
@@ -36417,12 +36267,6 @@
     "domain": "e-stp.com.mx",
     "pathPrefix": "",
     "datasetDate": "2026-04-15",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "e-ucenje-fsb-hr.framer.website",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-09",
     "sourceID": "src_phishtank"
   },
   {
@@ -36972,12 +36816,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "ejnkj.com",
-    "pathPrefix": "/jjlxctm",
-    "datasetDate": "2026-09-08",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "ek7n2cbxnbvngz-pages-dev.translate.goog",
     "pathPrefix": "/site4.sbisec.co.jp.html",
     "datasetDate": "2025-05-26",
@@ -37482,12 +37320,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "eng-bridge.framer.media",
-    "pathPrefix": "/new-bridge",
-    "datasetDate": "2026-05-28",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "eng-ldgrlive-support.wixstudio.com",
     "pathPrefix": "/en-us",
     "datasetDate": "2026-06-11",
@@ -37917,12 +37749,6 @@
     "domain": "erutjhpk.login.dwmnhsqa.wccheck-6b3c4826-a.santandertelephony-yfcowbeta.bimp-bot.duckdns.org",
     "pathPrefix": "",
     "datasetDate": "2026-08-19",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "erynkas.m-pages.com",
-    "pathPrefix": "/7N3rTD/nethaut",
-    "datasetDate": "2025-10-09",
     "sourceID": "src_phishtank"
   },
   {
@@ -39594,6 +39420,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "evolvecontruction.com",
+    "pathPrefix": "/dse/sgn",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "evsemchidul442.wpenginepowered.com",
     "pathPrefix": "/wp-includes/customize",
     "datasetDate": "2024-07-07",
@@ -40338,12 +40170,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "fdheheherhfd.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-29",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "fdkq-zcmp.maillist-manage.eu",
     "pathPrefix": "/click/12aa53bbc2840597",
     "datasetDate": "2024-08-21",
@@ -41029,6 +40855,12 @@
   },
   {
     "domain": "flow.page",
+    "pathPrefix": "/redirect-tobilling",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "flow.page",
     "pathPrefix": "/server0890",
     "datasetDate": "2024-06-04",
     "sourceID": "src_phishtank"
@@ -41222,12 +41054,6 @@
   {
     "domain": "flowcode.com",
     "pathPrefix": "/p/eButTKOMog",
-    "datasetDate": "2026-11-16",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "flowcode.com",
-    "pathPrefix": "/p/eButTkY2EA",
     "datasetDate": "2026-11-16",
     "sourceID": "src_phishtank"
   },
@@ -43008,12 +42834,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "fortcheck.ink",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-01",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "fortvite.com",
     "pathPrefix": "",
     "datasetDate": "2026-11-01",
@@ -43245,6 +43065,12 @@
     "domain": "freemobilebroadbandee.plutio.com",
     "pathPrefix": "/p/form",
     "datasetDate": "2025-09-12",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "fresh-network-276970.framer.app",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -43809,12 +43635,6 @@
     "domain": "geckotristate.com",
     "pathPrefix": "/wed",
     "datasetDate": "2026-07-12",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "geckowebdesign.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-02",
     "sourceID": "src_phishtank"
   },
   {
@@ -44928,12 +44748,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "gov-nfqo.help",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-03",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "gov-nfqy.help",
     "pathPrefix": "",
     "datasetDate": "2026-05-03",
@@ -44965,12 +44779,6 @@
   },
   {
     "domain": "gov-parkingqe.shop",
-    "pathPrefix": "/com",
-    "datasetDate": "2026-05-29",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "gov-parkingqe.top",
     "pathPrefix": "/com",
     "datasetDate": "2026-05-29",
     "sourceID": "src_phishtank"
@@ -45360,12 +45168,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "guidecdn-ldgre.wixstudio.com",
-    "pathPrefix": "/us-en",
-    "datasetDate": "2026-05-20",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "guinchoreg-ojhbbebn.manus.space",
     "pathPrefix": "/candidatura",
     "datasetDate": "2026-11-04",
@@ -45489,12 +45291,6 @@
     "domain": "hadafatya23sa.start.page",
     "pathPrefix": "",
     "datasetDate": "2023-05-11",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "hadeedethopia.nyatechservices.com",
-    "pathPrefix": "/lnkl/ios",
-    "datasetDate": "2022-09-17",
     "sourceID": "src_phishtank"
   },
   {
@@ -45663,12 +45459,6 @@
     "domain": "hebhg.com",
     "pathPrefix": "",
     "datasetDate": "2026-09-08",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "hebrew-package-recei-h7zq.bolt.host",
-    "pathPrefix": "",
-    "datasetDate": "2025-11-30",
     "sourceID": "src_phishtank"
   },
   {
@@ -45978,12 +45768,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "hhnbggh.jimdofree.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-27",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "hidroestanque.cl",
     "pathPrefix": "/ok/rogers",
     "datasetDate": "2025-08-19",
@@ -46125,6 +45909,12 @@
     "domain": "hipolink.net",
     "pathPrefix": "/versecproceedjyad21",
     "datasetDate": "2025-07-31",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "hiremedicals.com",
+    "pathPrefix": "/contact/login.php",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -46884,12 +46674,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "htydtyhfgfdgf65468jyfgytdytfgu.cfolks.pl",
-    "pathPrefix": "/wp-content/vasi",
-    "datasetDate": "2026-11-15",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "htyr54.w3spaces.com",
     "pathPrefix": "/iouytertfyguhi908765.html",
     "datasetDate": "2024-05-05",
@@ -47067,12 +46851,6 @@
     "domain": "hygbczrn.sparkasse-beratung.art",
     "pathPrefix": "",
     "datasetDate": "2026-04-17",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "hyjt687uy.square.site",
-    "pathPrefix": "",
-    "datasetDate": "2024-04-28",
     "sourceID": "src_phishtank"
   },
   {
@@ -47472,12 +47250,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "iglosrl.it",
-    "pathPrefix": "/post.php",
-    "datasetDate": "2024-01-14",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "iglznc.webwave.dev",
     "pathPrefix": "",
     "datasetDate": "2024-10-04",
@@ -47859,12 +47631,6 @@
     "domain": "indd.adobe.com",
     "pathPrefix": "/view/fbd5a184-24c2-439f-9867-a8e6b6e523e0",
     "datasetDate": "2023-12-20",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "independent-mango-902037.framer.app",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-27",
     "sourceID": "src_phishtank"
   },
   {
@@ -48294,6 +48060,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "instagram-login.desireblueuniforms.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "instagram5-byte.github.io",
     "pathPrefix": "/Bareskrim-polri-Indonesia-",
     "datasetDate": "2026-07-18",
@@ -48663,12 +48435,6 @@
     "domain": "iostart-trezr.wixstudio.com",
     "pathPrefix": "/us-en",
     "datasetDate": "2026-06-11",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "iostarts-ldgercdn.wixstudio.com",
-    "pathPrefix": "/us-en",
-    "datasetDate": "2026-06-15",
     "sourceID": "src_phishtank"
   },
   {
@@ -49753,12 +49519,6 @@
   },
   {
     "domain": "ipfs.io",
-    "pathPrefix": "/ipfs/QmZFfDs9XiX4vJeiou1LuvSTzohdK363MLuBcakQ2vvJYn",
-    "datasetDate": "2024-02-19",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "ipfs.io",
     "pathPrefix": "/ipfs/QmZpfUHb5196eYHJBLFM18dBUqnqBbpj1CCT1rC6wAANHq",
     "datasetDate": "2024-02-19",
     "sourceID": "src_phishtank"
@@ -49809,12 +49569,6 @@
     "domain": "ipfs.io",
     "pathPrefix": "/ipfs/bafybeih2afntuva37x2yhpfqm2v7fwz7mpjsobvcbsfouda2uow2hgdv3m",
     "datasetDate": "2024-02-19",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "ipko-pl.1wp.site",
-    "pathPrefix": "/yh/pl",
-    "datasetDate": "2026-10-24",
     "sourceID": "src_phishtank"
   },
   {
@@ -50328,6 +50082,18 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "itsme-nlfr.myvnc.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "itsme-nlfr.myvnc.com",
+    "pathPrefix": "/otl",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "itsvalidations.godaddysites.com",
     "pathPrefix": "",
     "datasetDate": "2025-07-11",
@@ -50685,12 +50451,6 @@
     "domain": "jhdgdh.w3spaces.com",
     "pathPrefix": "",
     "datasetDate": "2024-07-08",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "jhfsswu.info",
-    "pathPrefix": "/ndusndaI",
-    "datasetDate": "2026-10-04",
     "sourceID": "src_phishtank"
   },
   {
@@ -51294,12 +51054,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "jywenxiu.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-23",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "jzcmr.com",
     "pathPrefix": "/review/AePYuvjmpM",
     "datasetDate": "2026-09-12",
@@ -51321,12 +51075,6 @@
     "domain": "k3bwzvn92.ukit.me",
     "pathPrefix": "",
     "datasetDate": "2026-01-27",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "k5wp9tr.hair",
-    "pathPrefix": "/eqtlf8sh/uX2gBA",
-    "datasetDate": "2026-07-09",
     "sourceID": "src_phishtank"
   },
   {
@@ -51951,12 +51699,6 @@
     "domain": "kleinanzeigen.nmgdfjd.com",
     "pathPrefix": "/193746423",
     "datasetDate": "2026-07-18",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "kleinanzeigen.xxzlaw.com",
-    "pathPrefix": "/829379240406",
-    "datasetDate": "2026-07-14",
     "sourceID": "src_phishtank"
   },
   {
@@ -72420,12 +72162,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "labstide.vu",
-    "pathPrefix": "/qbooks/auth",
-    "datasetDate": "2026-10-25",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "ladger--live.wixstudio.com",
     "pathPrefix": "/web-en",
     "datasetDate": "2026-04-29",
@@ -72642,6 +72378,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "lawpracticeinabox.cfd",
+    "pathPrefix": "/sign/ec4",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "lawsonhope1903.wixsite.com",
     "pathPrefix": "/my-site-1",
     "datasetDate": "2025-11-18",
@@ -72717,12 +72459,6 @@
     "domain": "lchqxnykj.com",
     "pathPrefix": "",
     "datasetDate": "2026-05-24",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "lcloudfindmy-devices-location.click",
-    "pathPrefix": "/ICL266",
-    "datasetDate": "2026-09-22",
     "sourceID": "src_phishtank"
   },
   {
@@ -72858,12 +72594,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "ledgeer-supportlive.framer.media",
-    "pathPrefix": "/en-live",
-    "datasetDate": "2026-04-08",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "ledger-com-start-sso-web.typedream.app",
     "pathPrefix": "",
     "datasetDate": "2026-07-29",
@@ -72921,12 +72651,6 @@
     "domain": "ledgerwellat.com",
     "pathPrefix": "",
     "datasetDate": "2026-09-02",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "ledgestartedapps.wixstudio.com",
-    "pathPrefix": "/us-en",
-    "datasetDate": "2026-05-16",
     "sourceID": "src_phishtank"
   },
   {
@@ -73083,12 +72807,6 @@
     "domain": "leonairsoft.com",
     "pathPrefix": "",
     "datasetDate": "2026-05-24",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "leonardo.journ4570822.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-27",
     "sourceID": "src_phishtank"
   },
   {
@@ -73407,6 +73125,18 @@
     "domain": "lime-symptoms-328178.framer.app",
     "pathPrefix": "",
     "datasetDate": "2026-06-16",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "limestoneberth.live",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "limestoneberth.live",
+    "pathPrefix": "/p/iTaQtRPd",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -74448,12 +74178,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "linkurl.pk",
-    "pathPrefix": "/E0pYUk-n",
-    "datasetDate": "2026-04-06",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "linnenlaw.myportfolio.com",
     "pathPrefix": "",
     "datasetDate": "2023-02-27",
@@ -75241,12 +74965,6 @@
   },
   {
     "domain": "live-en-ledaegr.wixstudio.com",
-    "pathPrefix": "/help",
-    "datasetDate": "2026-07-07",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "live-en-ledaegr.wixstudio.com",
     "pathPrefix": "/us-en",
     "datasetDate": "2026-07-07",
     "sourceID": "src_phishtank"
@@ -75481,6 +75199,12 @@
   },
   {
     "domain": "ln.run",
+    "pathPrefix": "/cik2e",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "ln.run",
     "pathPrefix": "/coKEG",
     "datasetDate": "2026-07-11",
     "sourceID": "src_phishtank"
@@ -75591,12 +75315,6 @@
     "domain": "lnkz.at",
     "pathPrefix": "/Tryst-Reviews-profile-Comments03",
     "datasetDate": "2026-06-04",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "lnrhdb.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-29",
     "sourceID": "src_phishtank"
   },
   {
@@ -76029,12 +75747,6 @@
     "domain": "login.yixiganghao.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-21",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "login.yunxingholdings.com",
-    "pathPrefix": "/home",
-    "datasetDate": "2026-06-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -76476,12 +76188,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "lvfdpay.shop",
-    "pathPrefix": "/jinhcgydko",
-    "datasetDate": "2026-08-30",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "lw-att-main.hopto.org",
     "pathPrefix": "/cgi-bin/home.ha",
     "datasetDate": "2026-07-18",
@@ -76653,18 +76359,6 @@
     "domain": "m85wyt.webwave.dev",
     "pathPrefix": "",
     "datasetDate": "2024-06-18",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "m95uuxdm7.duckdns.org",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-09",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "macaxis.us.cc",
-    "pathPrefix": "/5g/home.html",
-    "datasetDate": "2026-07-27",
     "sourceID": "src_phishtank"
   },
   {
@@ -77244,12 +76938,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "marcel.jour4571108.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "marcozeroajusteparacima.s3.us-east-005.backblazeb2.com",
     "pathPrefix": "/aumento.html",
     "datasetDate": "2026-08-06",
@@ -77277,6 +76965,12 @@
     "domain": "mariabertadelgado.ziflow.io",
     "pathPrefix": "/proof/nnoceodrkle5gltovuudkvt9b1",
     "datasetDate": "2023-06-09",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "mariamaliajeria.cl",
+    "pathPrefix": "/luatl",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -77532,12 +77226,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "matsui-dg.cfd",
-    "pathPrefix": "/review/bqkqhprbqs",
-    "datasetDate": "2026-11-15",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "matsui-dm.cfd",
     "pathPrefix": "/review/djiwfujkwa",
     "datasetDate": "2026-11-16",
@@ -77622,12 +77310,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "maxig.cl",
-    "pathPrefix": "/xinfini",
-    "datasetDate": "2026-05-23",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "maxiinne2011.editorx.io",
     "pathPrefix": "/my-site",
     "datasetDate": "2024-07-31",
@@ -77700,6 +77382,36 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "maxis-dd.web.id",
+    "pathPrefix": "/max",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "maxis-h.my.id",
+    "pathPrefix": "/max",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "maxis-h.shop",
+    "pathPrefix": "/max",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "maxis-h.web.id",
+    "pathPrefix": "/max",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "maxis-hot.eu.cc",
+    "pathPrefix": "/max",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "maxis-hot.my.id",
     "pathPrefix": "/max",
     "datasetDate": "2026-11-19",
@@ -77736,15 +77448,15 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "maxis-ssl.shop",
+    "domain": "maxis-xis.my.id",
     "pathPrefix": "/max",
     "datasetDate": "2026-11-14",
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "maxis-xis.my.id",
+    "domain": "maxis-xx.shop",
     "pathPrefix": "/max",
-    "datasetDate": "2026-11-14",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -77820,12 +77532,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "mcaamvoli.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-15",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "mcas-proxyweb.mcas.ms",
     "pathPrefix": "/certificate-checker",
     "datasetDate": "2022-08-13",
@@ -77871,12 +77577,6 @@
     "domain": "mdl-rly.com",
     "pathPrefix": "",
     "datasetDate": "2026-04-18",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "mdvuewl.info",
-    "pathPrefix": "/7oBbyg",
-    "datasetDate": "2026-09-08",
     "sourceID": "src_phishtank"
   },
   {
@@ -77955,12 +77655,6 @@
     "domain": "medpharmacygroup.ge",
     "pathPrefix": "/tmp",
     "datasetDate": "2024-04-08",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "medttra.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-12",
     "sourceID": "src_phishtank"
   },
   {
@@ -78564,12 +78258,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "mex-nexfly.webcindario.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-03-02",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "mexico-express-cita.com",
     "pathPrefix": "",
     "datasetDate": "2026-04-19",
@@ -78877,12 +78565,6 @@
   },
   {
     "domain": "mijneherkerig.es",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-01",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "mijneherkerig.es",
     "pathPrefix": "/eherk.php",
     "datasetDate": "2026-06-01",
     "sourceID": "src_phishtank"
@@ -78945,12 +78627,6 @@
     "domain": "mimosawedding.vn",
     "pathPrefix": "/w",
     "datasetDate": "2026-09-02",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "min.standard.us-east-1.oortstorages.com",
-    "pathPrefix": "/emm.znc",
-    "datasetDate": "2026-03-03",
     "sourceID": "src_phishtank"
   },
   {
@@ -79233,12 +78909,6 @@
     "domain": "mjjbj.com",
     "pathPrefix": "/sbc",
     "datasetDate": "2026-07-01",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "mjmconseil.fr",
-    "pathPrefix": "",
-    "datasetDate": "2026-01-26",
     "sourceID": "src_phishtank"
   },
   {
@@ -79536,12 +79206,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "monespace-reglement.com",
-    "pathPrefix": "/support/login",
-    "datasetDate": "2026-05-29",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "monex.sispro.mx",
     "pathPrefix": "/portal/public",
     "datasetDate": "2023-01-23",
@@ -79626,12 +79290,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "morikavo.com",
-    "pathPrefix": "/l/hnxvcoziuo",
-    "datasetDate": "2026-07-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "mosnerv.ru",
     "pathPrefix": "/wp-admin/user",
     "datasetDate": "2026-03-13",
@@ -79704,12 +79362,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "mr-track-info.info",
-    "pathPrefix": "/index.php",
-    "datasetDate": "2026-11-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "mrelay-belgique.bolt.host",
     "pathPrefix": "",
     "datasetDate": "2026-06-15",
@@ -79767,12 +79419,6 @@
     "domain": "ms-canis.securen.net",
     "pathPrefix": "",
     "datasetDate": "2024-07-05",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "msbkprod.infoimageinc.com",
-    "pathPrefix": "/login.jsp",
-    "datasetDate": "2023-12-16",
     "sourceID": "src_phishtank"
   },
   {
@@ -79911,12 +79557,6 @@
     "domain": "mub.me",
     "pathPrefix": "/642",
     "datasetDate": "2026-08-07",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "mub.me",
-    "pathPrefix": "/Sohz",
-    "datasetDate": "2026-07-11",
     "sourceID": "src_phishtank"
   },
   {
@@ -80148,12 +79788,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "my-site-101371-101178.weeblysite.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-12",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "my-site-102029-103594.square.site",
     "pathPrefix": "",
     "datasetDate": "2023-12-23",
@@ -80181,12 +79815,6 @@
     "domain": "my-site-107705-10527.square.site",
     "pathPrefix": "",
     "datasetDate": "2024-06-22",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "my-surmovsv.lol",
-    "pathPrefix": "",
-    "datasetDate": "2026-07-12",
     "sourceID": "src_phishtank"
   },
   {
@@ -80640,12 +80268,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "mysubcription-neftlix.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-07",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "mytimemakeup.com",
     "pathPrefix": "/l/6nmDqdoAkutDBlOyhZbk",
     "datasetDate": "2025-03-05",
@@ -80871,12 +80493,6 @@
     "domain": "natwak.com",
     "pathPrefix": "",
     "datasetDate": "2023-06-22",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "naudy-verges.jour5783111.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-03",
     "sourceID": "src_phishtank"
   },
   {
@@ -81309,12 +80925,6 @@
     "domain": "netfilxservicio.com",
     "pathPrefix": "/calcul",
     "datasetDate": "2026-08-05",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "netfix.ayuda-pagar.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-28",
     "sourceID": "src_phishtank"
   },
   {
@@ -88188,12 +87798,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "nitcoin-en.wixstudio.com",
-    "pathPrefix": "/us-en",
-    "datasetDate": "2026-06-07",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "nj.gov-ycl.help",
     "pathPrefix": "",
     "datasetDate": "2026-05-03",
@@ -89040,6 +88644,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "nuel0crx.s3.us-east-1.amazonaws.com",
+    "pathPrefix": "/index.html",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "nuloraca.com",
     "pathPrefix": "/click-voc-NTk3MDY5NjE0MXw4ZDdjNjUyYQ.html",
     "datasetDate": "2025-04-04",
@@ -89049,6 +88659,12 @@
     "domain": "numerical-network-704294.framer.app",
     "pathPrefix": "",
     "datasetDate": "2026-07-17",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "nuvion.pl",
+    "pathPrefix": "/h/oferta",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -89187,6 +88803,12 @@
     "domain": "ocpi.co.uk",
     "pathPrefix": "",
     "datasetDate": "2023-07-05",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "octubreavanzaperu.digital",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -89544,15 +89166,15 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "olx-pl.ayacuy.icu",
-    "pathPrefix": "/payment/48a054530da1",
-    "datasetDate": "2026-07-24",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "olx-pl.lmnoa.shop",
     "pathPrefix": "/payment/7435b1b21d1c",
     "datasetDate": "2026-09-04",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "olx.allegrolokalne-i.top",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -89601,18 +89223,6 @@
     "domain": "olx.o102020282.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-17",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "olx.o10202030.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-19",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "olx.o10202038.shop",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-15",
     "sourceID": "src_phishtank"
   },
   {
@@ -89670,15 +89280,15 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "olx.ofert590.sbs",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-10",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "olx.ofert894401.sbs",
     "pathPrefix": "",
     "datasetDate": "2026-11-19",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "olx.oferta029342049223.cfd",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -90033,12 +89643,6 @@
     "domain": "open-chtgptrenew.com",
     "pathPrefix": "/refu/chatgpt",
     "datasetDate": "2026-09-09",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "open-legrerlive.wixstudio.com",
-    "pathPrefix": "/en-live",
-    "datasetDate": "2026-04-06",
     "sourceID": "src_phishtank"
   },
   {
@@ -90786,6 +90390,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "p0rtal-stpmex.cfd",
+    "pathPrefix": "/spei/login",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "p0shmark.308627951.cfd",
     "pathPrefix": "/5dGvZEcudsow2VoaqNG3UbpA",
     "datasetDate": "2026-10-27",
@@ -91464,12 +91074,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "payx-polandcore.biz.id",
-    "pathPrefix": "/m/Mi9EVTB1ZEg5aUww",
-    "datasetDate": "2026-11-12",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pbdwz.com",
     "pathPrefix": "/detail/6eNKmnBkNW",
     "datasetDate": "2026-09-05",
@@ -91530,12 +91134,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "pcn-noticui.cyou",
-    "pathPrefix": "/com",
-    "datasetDate": "2026-05-21",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pcn-noticus.cyou",
     "pathPrefix": "/com",
     "datasetDate": "2026-05-21",
@@ -91543,12 +91141,6 @@
   },
   {
     "domain": "pcn-noticuv.top",
-    "pathPrefix": "/com",
-    "datasetDate": "2026-05-21",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pcn-noticux.shop",
     "pathPrefix": "/com",
     "datasetDate": "2026-05-21",
     "sourceID": "src_phishtank"
@@ -91920,12 +91512,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "pichincha-2026.webcindario.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-01-30",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pichincha-com-co.webcindario.com",
     "pathPrefix": "",
     "datasetDate": "2024-07-10",
@@ -92118,12 +91704,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "pjnetempresarial-suporte.digital",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-17",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pjnetempresas.info",
     "pathPrefix": "",
     "datasetDate": "2026-11-17",
@@ -92148,12 +91728,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "pjvalida.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-13",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pkaveen.in",
     "pathPrefix": "/Webmail/1",
     "datasetDate": "2025-07-10",
@@ -92175,12 +91749,6 @@
     "domain": "pl-2q8v-pkobiznes-firma.mozesz.net",
     "pathPrefix": "/-/logowanie",
     "datasetDate": "2026-10-27",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pl-4r6u-pkobiznes.elektroniczna-bankowosc.net",
-    "pathPrefix": "/-/logowanie",
-    "datasetDate": "2026-11-06",
     "sourceID": "src_phishtank"
   },
   {
@@ -92265,12 +91833,6 @@
     "domain": "place.bio",
     "pathPrefix": "/jgjit",
     "datasetDate": "2025-03-27",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "placi.oblg5783104.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-06",
     "sourceID": "src_phishtank"
   },
   {
@@ -92430,12 +91992,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "poczta-pl.gueice.icu",
-    "pathPrefix": "/payment/48a054530da1",
-    "datasetDate": "2026-07-24",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "poczta-polska.paycore-my3.shop",
     "pathPrefix": "/viewer/bWlsbGVubml1bQ",
     "datasetDate": "2026-11-16",
@@ -92457,12 +92013,6 @@
     "domain": "podatelna-site-b7a1d4.webflow.io",
     "pathPrefix": "",
     "datasetDate": "2026-07-17",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "podular.site",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-14",
     "sourceID": "src_phishtank"
   },
   {
@@ -92511,6 +92061,12 @@
     "domain": "policy-compliance-standards-hjyq.onrender.com",
     "pathPrefix": "/help",
     "datasetDate": "2026-11-15",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "policy-governance-services.onrender.com",
+    "pathPrefix": "/help",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -93132,12 +92688,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "ppz0y9a6grw3veoqwz.live",
-    "pathPrefix": "/p/U4R4KSfg",
-    "datasetDate": "2026-07-30",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pqzcdsh.us17.list-manage.com",
     "pathPrefix": "/track/click",
     "datasetDate": "2024-11-06",
@@ -93518,7 +93068,7 @@
   {
     "domain": "prime-assistance.com",
     "pathPrefix": "",
-    "datasetDate": "2026-11-19",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -93972,12 +93522,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "protrit.bdll5783488.pro",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-19",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "provegatv.webcindario.com",
     "pathPrefix": "",
     "datasetDate": "2023-10-18",
@@ -94263,12 +93807,6 @@
     "domain": "pub-0599a4b463c94302b7b0538a36dd379a.r2.dev",
     "pathPrefix": "/servies.html",
     "datasetDate": "2024-07-28",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pub-06bced4bbe3646ff8ba908698f054190.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2024-12-12",
     "sourceID": "src_phishtank"
   },
   {
@@ -94815,12 +94353,6 @@
     "domain": "pub-1e4a551479c748e39a6c6818e556a031.r2.dev",
     "pathPrefix": "/tgrufhd5iehjfjdbu538ytgjgdbt496539464969649467946hgkfdny69847969ighkhiy9u967894rfkhnkmndgxlogjd9iy8uy749ign46eihdkdgyey4e964964946ikdgj46946946yegdgtetu4946jyrdgkdg4y694949t4yte8eth3t5e9et9teetgjned9oer9045-45=4dore8.html",
     "datasetDate": "2023-08-10",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pub-1e540a71188c4edd9c60fb8b9958c5cb.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2024-05-13",
     "sourceID": "src_phishtank"
   },
   {
@@ -95733,18 +95265,6 @@
     "domain": "pub-3ed8174ef961456b940e6e3a911f1f33.r2.dev",
     "pathPrefix": "/200345678765432.html",
     "datasetDate": "2023-07-11",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pub-3f081ad7284d4ae088815e99acb1811a.r2.dev",
-    "pathPrefix": "/zmb.html",
-    "datasetDate": "2026-06-12",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pub-3f532b41f96044e693ce18161b58d785.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2024-08-17",
     "sourceID": "src_phishtank"
   },
   {
@@ -96912,12 +96432,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "pub-6ff9aaa2cd4143d7b3a44ac161ceb19a.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2024-07-12",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pub-7029ca53c7f547c4acc6d6c40e998d89.r2.dev",
     "pathPrefix": "/hdgbcgd.html",
     "datasetDate": "2023-10-12",
@@ -97080,12 +96594,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "pub-75da366beaec4e759d6abfad401e6892.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2024-10-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pub-76761043d7714c019b0d5b4a6d6779ff.r2.dev",
     "pathPrefix": "/newcontractsigning2023.html",
     "datasetDate": "2023-11-16",
@@ -97166,7 +96674,7 @@
   {
     "domain": "pub-78a272af52b14a33975228017d07268d.r2.dev",
     "pathPrefix": "/index.html",
-    "datasetDate": "2024-07-28",
+    "datasetDate": "2024-06-12",
     "sourceID": "src_phishtank"
   },
   {
@@ -98322,12 +97830,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "pub-abdb764554b0439c836fb9286892e457.r2.dev",
-    "pathPrefix": "/webmail0.2.html",
-    "datasetDate": "2026-04-26",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pub-abe90e2e6f2a4bea90297b717a198c13.r2.dev",
     "pathPrefix": "/Sharedocs.html",
     "datasetDate": "2024-07-04",
@@ -98343,12 +97845,6 @@
     "domain": "pub-abfe318648ca4f11b75f1e4dbe846434.r2.dev",
     "pathPrefix": "/index.html",
     "datasetDate": "2025-04-17",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pub-ac1bc61232dc4c23bd5ca164c650b0d6.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2025-09-25",
     "sourceID": "src_phishtank"
   },
   {
@@ -98943,12 +98439,6 @@
     "domain": "pub-cae4ded32a464f59879d1e8d6cc6dfbf.r2.dev",
     "pathPrefix": "/accessnow.html",
     "datasetDate": "2024-03-09",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pub-cb158f56d07346ac80ab80997a055933.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2024-06-19",
     "sourceID": "src_phishtank"
   },
   {
@@ -99900,12 +99390,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "pub-f3431255dd204edabe94f7a8996cd770.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2025-10-20",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "pub-f37e8b5df085423cb7f15162549e7949.r2.dev",
     "pathPrefix": "/index.html",
     "datasetDate": "2024-06-05",
@@ -99933,12 +99417,6 @@
     "domain": "pub-f3e7a7935198448e8052bd45a3a165f0.r2.dev",
     "pathPrefix": "/index.html",
     "datasetDate": "2024-08-14",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pub-f3ef5a6fb79943d39487269a3e1213b9.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2024-09-03",
     "sourceID": "src_phishtank"
   },
   {
@@ -100293,12 +99771,6 @@
     "domain": "pub-fdf53664293842c6a1efb30f32ffd43d.r2.dev",
     "pathPrefix": "/index.html",
     "datasetDate": "2024-06-06",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "pub-fe1d9c59c11c401a86d66846a9eeeedb.r2.dev",
-    "pathPrefix": "/index.html",
-    "datasetDate": "2024-09-10",
     "sourceID": "src_phishtank"
   },
   {
@@ -121545,12 +121017,6 @@
     "domain": "q1tvmn.sbs",
     "pathPrefix": "/o/ob8hd",
     "datasetDate": "2026-11-19",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "q8w2e6r1t9y3u7i4o0p5a2s80uo3uw-pq03wtbdy8.edgeone.app",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-06",
     "sourceID": "src_phishtank"
   },
   {
@@ -150210,6 +149676,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "r24ew.pics",
+    "pathPrefix": "/h/oferta",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "r26kz2.info",
     "pathPrefix": "/7oBbyg",
     "datasetDate": "2026-09-08",
@@ -150246,12 +149718,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "rabby-wallet.wasmer.app",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-11",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "rabbyyweallett.gitbook.io",
     "pathPrefix": "",
     "datasetDate": "2026-10-21",
@@ -150273,6 +149739,12 @@
     "domain": "rackspacemail.github.io",
     "pathPrefix": "/account",
     "datasetDate": "2026-02-24",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "radian.mysso-setup.com",
+    "pathPrefix": "/common/oauth2",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -150378,12 +149850,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "raku-point-edia.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-09",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "rallysteelworks.ae",
     "pathPrefix": "/fonts",
     "datasetDate": "2026-02-08",
@@ -150471,12 +149937,6 @@
     "domain": "rb.gy",
     "pathPrefix": "/imw4a1",
     "datasetDate": "2026-06-12",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "rbfcu-star.azurewebsites.net",
-    "pathPrefix": "/(S(haffc5y04yyroivqw0bveprh))/Main",
-    "datasetDate": "2025-12-01",
     "sourceID": "src_phishtank"
   },
   {
@@ -151152,6 +150612,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "rendoyureaibot.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "renewabonne3ds.com",
     "pathPrefix": "",
     "datasetDate": "2026-08-15",
@@ -151317,6 +150783,12 @@
     "domain": "resgatlivel.cyou",
     "pathPrefix": "",
     "datasetDate": "2026-08-10",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "residenzaroma-tropea.it",
+    "pathPrefix": "/wp-includes/frontoffice",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -152898,12 +152370,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "rx4peo.sbs",
-    "pathPrefix": "/o/ob8hd",
-    "datasetDate": "2026-11-19",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "ryanml.github.io",
     "pathPrefix": "/website",
     "datasetDate": "2023-02-01",
@@ -153288,12 +152754,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "saifoodanaly.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-04-24",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "sakematafitness.ge",
     "pathPrefix": "/static/assets",
     "datasetDate": "2025-09-11",
@@ -153552,6 +153012,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "sbi-sdes.cfd",
+    "pathPrefix": "/guide/xwfnjkigjk",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "sbi-sens.cfd",
     "pathPrefix": "",
     "datasetDate": "2026-11-19",
@@ -153570,14 +153036,14 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "sbi-srees.cfd",
-    "pathPrefix": "/review/fcqypocmod",
-    "datasetDate": "2026-11-19",
+    "domain": "sbi-sevcs.cfd",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "sbi-sres.cfd",
-    "pathPrefix": "/guide/qaidgliweq",
+    "domain": "sbi-srees.cfd",
+    "pathPrefix": "/review/fcqypocmod",
     "datasetDate": "2026-11-19",
     "sourceID": "src_phishtank"
   },
@@ -154458,6 +153924,18 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "scur.pagamentohostingearsellahostingeseljsyyalo.eu.cc",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "scur.pagamentohostingearsellahostingeseljsyyalo.eu.cc",
+    "pathPrefix": "/SOcbhX5gcB-F78C55s2-Zq8tidQh-SEYt4Jl",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "scut.dmiloppsservizoiarubapagamentosucreti.club",
     "pathPrefix": "/RAMuTw-qU3CP5C-4FdNY0ujLg-0mknU7v/index.html",
     "datasetDate": "2026-10-19",
@@ -154467,12 +153945,6 @@
     "domain": "sd.pb3.duckdns.org",
     "pathPrefix": "",
     "datasetDate": "2026-08-14",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "sdc.bcn.mybluehost.me",
-    "pathPrefix": "",
-    "datasetDate": "2026-10-28",
     "sourceID": "src_phishtank"
   },
   {
@@ -154521,12 +153993,6 @@
     "domain": "sdo6caaca3d-us-east-2.s3.us-east-2.amazonaws.com",
     "pathPrefix": "/51bff.html",
     "datasetDate": "2025-08-20",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "sdxinling.com",
-    "pathPrefix": "/page/pnyknexgtd",
-    "datasetDate": "2026-07-26",
     "sourceID": "src_phishtank"
   },
   {
@@ -154581,12 +154047,6 @@
     "domain": "secufou.wixsite.com",
     "pathPrefix": "/misite",
     "datasetDate": "2025-10-21",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "secupass-caissedep.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-17",
     "sourceID": "src_phishtank"
   },
   {
@@ -155364,6 +154824,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "servicescolis-jp.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "servicetoeebroadband.plutio.com",
     "pathPrefix": "/p/form",
     "datasetDate": "2025-09-12",
@@ -155373,6 +154839,12 @@
     "domain": "serviceupcss.wpenginepowered.com",
     "pathPrefix": "/mycss/k.html",
     "datasetDate": "2025-07-25",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "servicioalcliente.click",
+    "pathPrefix": "/bac.pa",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -155649,6 +155121,12 @@
     "domain": "sgenerale9.bolt.host",
     "pathPrefix": "/index.html",
     "datasetDate": "2026-06-09",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "sgnger.shop",
+    "pathPrefix": "/docu",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -157938,12 +157416,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "shaw-107941.weeblysite.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-02",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "shaw-108331.square.site",
     "pathPrefix": "",
     "datasetDate": "2024-07-14",
@@ -158322,12 +157794,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "silmevorn.cfd",
-    "pathPrefix": "/pages",
-    "datasetDate": "2026-10-04",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "silver-clarity-377603.framer.app",
     "pathPrefix": "",
     "datasetDate": "2026-07-29",
@@ -158538,21 +158004,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "site-bluno2j8h.godaddysites.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-16",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "site-d9l8vtb68.godaddysites.com",
     "pathPrefix": "",
     "datasetDate": "2025-09-16",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "site-dv6i4gp0c.godaddysites.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-12",
     "sourceID": "src_phishtank"
   },
   {
@@ -165720,12 +165174,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "skypersystems.ca",
-    "pathPrefix": "/genl",
-    "datasetDate": "2023-11-10",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "skyprep-filepicker-uploads.s3.amazonaws.com",
     "pathPrefix": "/XZqiKPRfTnXvFEJcUzgt_bergesstille.svg",
     "datasetDate": "2024-07-01",
@@ -165900,12 +165348,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "smbc-cardindex.hdhdy.com",
-    "pathPrefix": "/newsinvestor-jp",
-    "datasetDate": "2026-06-14",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "smbc-cardindex.jnxkedu.com",
     "pathPrefix": "/newsinvestor-jp",
     "datasetDate": "2026-06-09",
@@ -165921,12 +165363,6 @@
     "domain": "smbc-life.zhaolishop.com",
     "pathPrefix": "/smbc-index",
     "datasetDate": "2026-11-11",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "smbc.hocxiu.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-12",
     "sourceID": "src_phishtank"
   },
   {
@@ -166101,12 +165537,6 @@
     "domain": "societegenerale-monespace.bolt.host",
     "pathPrefix": "",
     "datasetDate": "2026-06-12",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "societegenerale.bolt.host",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-01",
     "sourceID": "src_phishtank"
   },
   {
@@ -166299,12 +165729,6 @@
     "domain": "souma-g.heteml.net",
     "pathPrefix": "/hinet-net-tw-web-mail/csg2000-hinet-net",
     "datasetDate": "2025-12-06",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "soundcorelife.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-19",
     "sourceID": "src_phishtank"
   },
   {
@@ -166608,12 +166032,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "spectrum-email-update-account.weeblysite.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-07-11",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "spectrum-update-upgrade-email-account.weeblysite.com",
     "pathPrefix": "",
     "datasetDate": "2026-08-01",
@@ -166689,12 +166107,6 @@
     "domain": "spikenow.com",
     "pathPrefix": "/web",
     "datasetDate": "2024-06-28",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "spiky-emails-896864.framer.app",
-    "pathPrefix": "",
-    "datasetDate": "2026-07-17",
     "sourceID": "src_phishtank"
   },
   {
@@ -167058,27 +166470,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "staring-trezosuite.wixstudio.com",
-    "pathPrefix": "/en-us",
-    "datasetDate": "2026-06-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "starmovies.cc",
     "pathPrefix": "/RojLVyooL",
     "datasetDate": "2026-03-13",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "starsio-apps-trexiro.wixstudio.com",
-    "pathPrefix": "/en-us",
-    "datasetDate": "2026-06-25",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "start-live--ledger-app.typedream.app",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-04",
     "sourceID": "src_phishtank"
   },
   {
@@ -168066,6 +167460,18 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "stpmex.uk.com",
+    "pathPrefix": "/spei/login",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "stpmex.us.com",
+    "pathPrefix": "/spei/login",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "straightforward-griffin-592982.framer.app",
     "pathPrefix": "",
     "datasetDate": "2026-10-28",
@@ -168207,18 +167613,6 @@
     "domain": "sui-slush-dev.webflow.io",
     "pathPrefix": "",
     "datasetDate": "2025-05-14",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "sui.faultllnecomms.com",
-    "pathPrefix": "/auth/71984c5c4d",
-    "datasetDate": "2026-09-24",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "suit--enus.wixstudio.com",
-    "pathPrefix": "/trezor-us",
-    "datasetDate": "2026-07-11",
     "sourceID": "src_phishtank"
   },
   {
@@ -168501,12 +167895,6 @@
     "domain": "suportenetgerente.digital",
     "pathPrefix": "",
     "datasetDate": "2026-10-15",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "suportenetjuridicopj.digital",
-    "pathPrefix": "/access.php",
-    "datasetDate": "2026-11-18",
     "sourceID": "src_phishtank"
   },
   {
@@ -169506,12 +168894,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "syyyt.top",
-    "pathPrefix": "/UlRnLXOj",
-    "datasetDate": "2026-10-07",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "syzksb.com",
     "pathPrefix": "",
     "datasetDate": "2026-11-06",
@@ -169585,18 +168967,6 @@
   },
   {
     "domain": "t-mobile.njhgsa.autos",
-    "pathPrefix": "",
-    "datasetDate": "2026-05-02",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "t-mobile.rokpbm.top",
-    "pathPrefix": "/pay",
-    "datasetDate": "2026-06-05",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "t-mobile.ynhfgi.mom",
     "pathPrefix": "",
     "datasetDate": "2026-05-02",
     "sourceID": "src_phishtank"
@@ -170319,12 +169689,6 @@
     "domain": "t.co",
     "pathPrefix": "/V2DzerdTXQ",
     "datasetDate": "2024-03-07",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "t.co",
-    "pathPrefix": "/VopPdQYjFK",
-    "datasetDate": "2026-01-28",
     "sourceID": "src_phishtank"
   },
   {
@@ -171804,12 +171168,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "tempoquayx.click",
-    "pathPrefix": "/step1.php",
-    "datasetDate": "2026-09-08",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "tengyipiano.com",
     "pathPrefix": "",
     "datasetDate": "2026-11-19",
@@ -171825,12 +171183,6 @@
     "domain": "teofilwrorewerd.samcart.com",
     "pathPrefix": "",
     "datasetDate": "2025-11-05",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "teoipzmn.co",
-    "pathPrefix": "",
-    "datasetDate": "2026-07-11",
     "sourceID": "src_phishtank"
   },
   {
@@ -171870,12 +171222,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "test.webclient4.de",
-    "pathPrefix": "",
-    "datasetDate": "2020-09-10",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "teste.melom.com",
     "pathPrefix": "/red/wx.htm",
     "datasetDate": "2026-02-03",
@@ -171909,6 +171255,12 @@
     "domain": "tffsrefdfs.w3spaces.com",
     "pathPrefix": "/ookojoodd.html",
     "datasetDate": "2024-08-05",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "tfgimpianti.it",
+    "pathPrefix": "/der/der",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -172221,6 +171573,12 @@
     "domain": "tiktokning.com",
     "pathPrefix": "",
     "datasetDate": "2026-08-13",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "tikumei.com",
+    "pathPrefix": "/product/kluj",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -174558,12 +173916,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "tokensignaldesk.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-11",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "tokyosanno.com",
     "pathPrefix": "/www.paypal-resolution.center.co.uk/encripted",
     "datasetDate": "2023-06-21",
@@ -174678,12 +174030,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "tparku.cc",
-    "pathPrefix": "/ro",
-    "datasetDate": "2026-08-02",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "tqonx5.info",
     "pathPrefix": "/7oBbyg",
     "datasetDate": "2026-09-08",
@@ -174693,6 +174039,12 @@
     "domain": "tqw42nl.duckdns.org",
     "pathPrefix": "",
     "datasetDate": "2026-08-09",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "tr-ee.bid",
+    "pathPrefix": "/elzOfZU",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -174757,12 +174109,6 @@
   },
   {
     "domain": "tr.ee",
-    "pathPrefix": "/oRhoSJ",
-    "datasetDate": "2026-10-19",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "tr.ee",
     "pathPrefix": "/rk7JHq",
     "datasetDate": "2024-10-12",
     "sourceID": "src_phishtank"
@@ -174783,6 +174129,12 @@
     "domain": "tr.ee",
     "pathPrefix": "/uiJn3S",
     "datasetDate": "2026-10-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "trabajoturismo-jp.com",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -175038,12 +174390,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "trexrsen-startapps.wixstudio.com",
-    "pathPrefix": "/portal",
-    "datasetDate": "2026-07-07",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "trezcr-live.com",
     "pathPrefix": "",
     "datasetDate": "2026-08-16",
@@ -175095,12 +174441,6 @@
     "domain": "trezor.gitbook.io",
     "pathPrefix": "/knowledge-base",
     "datasetDate": "2026-01-05",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "trezor.io-start.app",
-    "pathPrefix": "",
-    "datasetDate": "2026-02-10",
     "sourceID": "src_phishtank"
   },
   {
@@ -175548,6 +174888,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "tusbeneficiosvip.click",
+    "pathPrefix": "/bac.pa",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "tusoatalinstanteen.wixsite.com",
     "pathPrefix": "/soat",
     "datasetDate": "2026-03-12",
@@ -175818,12 +175164,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "u29196748.ct.sendgrid.net",
-    "pathPrefix": "/ls/click",
-    "datasetDate": "2026-11-19",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "u3738.square.site",
     "pathPrefix": "",
     "datasetDate": "2024-03-11",
@@ -175863,6 +175203,12 @@
     "domain": "u67ey5.pics",
     "pathPrefix": "/h/oferta",
     "datasetDate": "2026-11-19",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "u7alxb.sbs",
+    "pathPrefix": "/o/ob8hd",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -176079,12 +175425,6 @@
     "domain": "ulys-mes-voyages.com",
     "pathPrefix": "",
     "datasetDate": "2026-06-03",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "ulys-reglement.com",
-    "pathPrefix": "/as.php",
-    "datasetDate": "2025-06-03",
     "sourceID": "src_phishtank"
   },
   {
@@ -176331,12 +175671,6 @@
     "domain": "united-internet-d.openx.net",
     "pathPrefix": "/w/1.0",
     "datasetDate": "2026-01-05",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "universityofcentralflorida.ukit.me",
-    "pathPrefix": "",
-    "datasetDate": "2024-02-15",
     "sourceID": "src_phishtank"
   },
   {
@@ -177492,12 +176826,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "v3.shortely.net",
-    "pathPrefix": "/dFDs=V6Aa9NC45BV-fattura-26CVB",
-    "datasetDate": "2026-04-21",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "v4k9rx.lat",
     "pathPrefix": "/o/ix118",
     "datasetDate": "2026-09-18",
@@ -177531,12 +176859,6 @@
     "domain": "vahidfarid.mohammadrezafreenode.workers.dev",
     "pathPrefix": "",
     "datasetDate": "2023-09-01",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "valenciafashioninstitute.com",
-    "pathPrefix": "/ipko-biz/pages",
-    "datasetDate": "2026-10-28",
     "sourceID": "src_phishtank"
   },
   {
@@ -177663,6 +176985,12 @@
     "domain": "vbtconn-jb2w-jvhk.plskyline1.concreteserver.com",
     "pathPrefix": "",
     "datasetDate": "2025-03-05",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "vcmkj.com",
+    "pathPrefix": "/story/ceyj",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -178596,12 +177924,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "vuthisegweka.co.za",
-    "pathPrefix": "/metalworkservice/index.php",
-    "datasetDate": "2026-05-04",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "vutyrj6auxryxcujvkyjadt-cutrsaxutyks7r96857yfhdj.teemill.com",
     "pathPrefix": "",
     "datasetDate": "2024-11-25",
@@ -178734,6 +178056,12 @@
     "sourceID": "src_phishtank"
   },
   {
+    "domain": "w9usda.casa",
+    "pathPrefix": "/o/ob8hd",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
     "domain": "wa.me",
     "pathPrefix": "/+17087404909",
     "datasetDate": "2023-12-22",
@@ -178839,12 +178167,6 @@
     "domain": "walmart.ipn-cashout.com",
     "pathPrefix": "",
     "datasetDate": "2026-04-18",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "waltgroup.ltd",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-15",
     "sourceID": "src_phishtank"
   },
   {
@@ -179046,19 +178368,7 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "web.tegdcl.top",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-14",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "web.tegdqi.top",
-    "pathPrefix": "",
-    "datasetDate": "2026-06-14",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "web.tegncw.top",
     "pathPrefix": "",
     "datasetDate": "2026-06-14",
     "sourceID": "src_phishtank"
@@ -179253,6 +178563,18 @@
     "domain": "webmail-supportcenter.framer.website",
     "pathPrefix": "",
     "datasetDate": "2026-07-09",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "webmail.aruba.it.cura-clienti.email",
+    "pathPrefix": "",
+    "datasetDate": "2026-11-20",
+    "sourceID": "src_phishtank"
+  },
+  {
+    "domain": "webmail.aruba.it.cura-clienti.email",
+    "pathPrefix": "/loginpel.aruba.it.pel.realms.pel.protocol.openid-connect.auth=loginpel.aruba.it.pel.realms.pel.protocol.openid-connect.auth=ZmFeS5135o9TIeBvjaHyQU",
+    "datasetDate": "2026-11-20",
     "sourceID": "src_phishtank"
   },
   {
@@ -180258,21 +179580,9 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "x888x.co",
-    "pathPrefix": "",
-    "datasetDate": "2026-09-18",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "xaguzxn.com",
     "pathPrefix": "/KOiSKFQJ",
     "datasetDate": "2026-11-13",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "xav1tzvwf.duckdns.org",
-    "pathPrefix": "",
-    "datasetDate": "2026-08-14",
     "sourceID": "src_phishtank"
   },
   {
@@ -180477,12 +179787,6 @@
     "domain": "xn--certificadodigitaldnielectrnico-69c.com",
     "pathPrefix": "/seleccione-su-entidad",
     "datasetDate": "2026-11-19",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "xn--crudit-gva.domici11920.pro",
-    "pathPrefix": "/captcha.php",
-    "datasetDate": "2026-03-11",
     "sourceID": "src_phishtank"
   },
   {
@@ -182310,12 +181614,6 @@
     "sourceID": "src_phishtank"
   },
   {
-    "domain": "ztbwr.com",
-    "pathPrefix": "",
-    "datasetDate": "2026-11-11",
-    "sourceID": "src_phishtank"
-  },
-  {
     "domain": "ztyuilknhchkjkjachdsj-cgxrsyukwejrd6ujmbqwsdc.teemill.com",
     "pathPrefix": "",
     "datasetDate": "2025-01-13",
@@ -182342,12 +181640,6 @@
   {
     "domain": "zuza.stefek.szczecin.pl",
     "pathPrefix": "/Webmail/47",
-    "datasetDate": "2023-12-07",
-    "sourceID": "src_phishtank"
-  },
-  {
-    "domain": "zuza.stefek.szczecin.pl",
-    "pathPrefix": "/Webmail/68",
     "datasetDate": "2023-12-07",
     "sourceID": "src_phishtank"
   },
